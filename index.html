@@ -4356,9 +4356,8 @@ const products = [
 ];
 
 // ===== RENDER PRODUCT CARD =====
-function renderCard(p) {
+function renderCard(p, eager) {
   if (p.hidden) return ''; // skip hidden products
-  // Support both {cls,text} objects and plain strings
   const tagsHTML = (p.tags || []).map(t => {
     if (typeof t === 'string') {
       const clsMap = { 'Handmade': 'pill-artisan', 'Heritage': 'pill-heritage', 'Story': 'pill-story', 'Artisan': 'pill-artisan', 'Limited': 'pill-limited', 'Organic': 'pill-organic', 'Viral': 'pill-hot', 'Designer': 'pill-limited', 'New In': 'pill-new', 'Classic': 'pill-heritage' };
@@ -4369,8 +4368,12 @@ function renderCard(p) {
   const soldOutOverlay = p.soldOut
     ? `<div class="sold-out-overlay"><div class="sold-out-label">Sold Out</div></div>`
     : '';
+  const imgObjFit = ['Clothing','Bags & Shoes','Accessories'].includes(p.category) ? 'cover;object-position:center top' : 'cover';
+  const imgStyle = `width:100%;height:100%;object-fit:${imgObjFit};position:absolute;top:0;left:0;`;
   const imgContent = p.imgs && p.imgs.length
-    ? `<img src="${p.imgs[0]}" style="width:100%;height:100%;object-fit:${['Clothing','Bags & Shoes','Accessories'].includes(p.category) ? 'cover;object-position:center top' : 'cover'};position:absolute;top:0;left:0;" loading="lazy" alt="${p.shortName || p.name}" onerror="this.style.display='none'">`
+    ? (eager
+        ? `<img src="${p.imgs[0]}" style="${imgStyle}" fetchpriority="high" decoding="async" alt="${p.shortName || p.name}" onerror="this.style.display='none'">`
+        : `<img data-src="${p.imgs[0]}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="${imgStyle}" class="card-lazy" alt="${p.shortName || p.name}" onerror="this.style.display='none'">`)
     : p.emoji;
   return `
     <div class="product-card" data-category="${p.category || ''}" onclick="openProduct(${p.id})">
@@ -4397,10 +4400,33 @@ function renderCard(p) {
 }
 
 // ===== POPULATE WATERFALLS =====
-function populateWaterfall(containerId, items) {
+function populateWaterfall(containerId, items, eagerCount) {
   const container = document.getElementById(containerId);
   if (!container) return;
-  container.innerHTML = items.map(p => renderCard(p)).join('');
+  const n = eagerCount !== undefined ? eagerCount : 0;
+  container.innerHTML = items.map((p, i) => renderCard(p, i < n)).join('');
+  initCardLazy(container);
+}
+
+function initCardLazy(root) {
+  const imgs = (root || document).querySelectorAll('img.card-lazy[data-src]');
+  if (!imgs.length) return;
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          const img = e.target;
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+          img.classList.remove('card-lazy');
+          obs.unobserve(img);
+        }
+      });
+    }, { rootMargin: '300px' });
+    imgs.forEach(function(img) { obs.observe(img); });
+  } else {
+    imgs.forEach(function(img) { img.src = img.dataset.src; });
+  }
 }
 
 // ID-based lookup (safe regardless of array position)
@@ -4431,29 +4457,29 @@ const forYouIds = [
   44, 43, 41, 45,
   42, 46, 47, 48
 ];
-populateWaterfall('waterfallForyou', forYouIds.map(getById).filter(Boolean));
+populateWaterfall('waterfallForyou', forYouIds.map(getById).filter(Boolean), 8);
 
 // Trending: viral + cultural moment items
 const trendingIds = [1, 2, 29, 16, 36, 37, 30, 40, 27, 44, 31, 9, 10, 24, 43, 38, 47, 45];
-populateWaterfall('waterfallTrending', trendingIds.map(getById).filter(Boolean));
+populateWaterfall('waterfallTrending', trendingIds.map(getById).filter(Boolean), 0);
 
 // Tab waterfalls — curated order for high-income US shoppers
 
-// Home & Living: Decor大件先 → 茶具/厨房小件 → 床品 → 香薰冲动消费
+// Home & Living
 const homeIds = [9, 10, 11, 12, 13, 3, 4, 6, 7, 8, 5, 14, 15];
-populateWaterfall('waterfallHome', homeIds.map(getById).filter(Boolean));
+populateWaterfall('waterfallHome', homeIds.map(getById).filter(Boolean), 0);
 
-// Fashion: 文化背书 → 高价精品 → 潮流单品 → 包/鞋/配件收尾
+// Fashion
 const fashionIds = [1, 2, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29];
-populateWaterfall('waterfallFashion', fashionIds.map(getById).filter(Boolean));
+populateWaterfall('waterfallFashion', fashionIds.map(getById).filter(Boolean), 0);
 
-// Collectibles: IP/viral → 手工限量 → 实用艺术品 → 文房小众
+// Collectibles
 const collectiblesIds = [36, 37, 30, 31, 38, 39, 32, 33, 34, 35];
-populateWaterfall('waterfallCollectibles', collectiblesIds.map(getById).filter(Boolean));
+populateWaterfall('waterfallCollectibles', collectiblesIds.map(getById).filter(Boolean), 0);
 
-// Wellness: 户外冒险（强背书）→ 仪式感香薰/茶 → 草本健康（功能向最后）
+// Wellness
 const wellnessIds = [40, 41, 44, 45, 42, 43, 46, 47, 48];
-populateWaterfall('waterfallWellness', wellnessIds.map(getById).filter(Boolean));
+populateWaterfall('waterfallWellness', wellnessIds.map(getById).filter(Boolean), 0);
 
 // ===== TAB SWITCHING =====
 const catTabs = document.querySelectorAll('.cat-tab');
@@ -4466,12 +4492,14 @@ catTabs.forEach(tab => {
     tab.classList.add('active');
     const target = tab.dataset.tab;
     tabContents.forEach(tc => tc.classList.remove('active'));
-    document.getElementById('tab-' + target).classList.add('active');
+    const activeTab = document.getElementById('tab-' + target);
+    activeTab.classList.add('active');
     const kg = document.getElementById('kinggang');
     kg.style.display = (target === 'foryou') ? 'grid' : 'none';
     mainContent.scrollTop = 0;
-    // Clear any active category filter when switching tabs
     clearCategoryFilter();
+    // Re-init lazy loading for newly visible tab
+    setTimeout(function() { initCardLazy(activeTab); }, 50);
   });
 });
 
