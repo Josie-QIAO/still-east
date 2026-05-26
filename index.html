@@ -4833,7 +4833,7 @@ function openProduct(id) {
     }
     // Detail image (bottom, after specs and process)
     if (p.detailImg) {
-      detailHTML += `<div style="margin-top:16px;"><img src="${p.detailImg}" style="max-height:220px; width:100%; object-fit:cover; border-radius:12px; display:block;"></div>`;
+      detailHTML += `<div style="margin-top:16px;"><img src="${p.detailImg}" loading="lazy" decoding="async" style="max-height:220px; width:100%; object-fit:cover; border-radius:12px; display:block;"></div>`;
     }
     // detailImages: rich image-caption blocks
     if (p.detailImages && p.detailImages.length) {
@@ -4843,7 +4843,7 @@ function openProduct(id) {
           ? 'width:100%; border-radius:12px; display:block;'
           : 'width:100%; object-fit:contain; background:#f9f6f2; border-radius:12px; display:block; max-height:360px;';
         detailHTML += `<div style="margin-top:16px;">
-          <img src="${img.url}" style="${imgStyle}">
+          <img data-src="${img.url}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" loading="lazy" decoding="async" class="lazy-img" style="${imgStyle}">
           ${img.caption ? `<div style="font-size:11px; color:#888; margin-top:6px; text-align:center;">${img.caption}</div>` : ''}
         </div>`;
       });
@@ -4982,5 +4982,42 @@ if (qr) {
   });
 }
 </script>
+
+<script>
+(function() {
+  var lazyImages = [];
+  function loadLazy() {
+    var imgs = document.querySelectorAll('img.lazy-img[data-src]');
+    if (!imgs.length) return;
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            var img = e.target;
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            img.classList.remove('lazy-img');
+            observer.unobserve(img);
+          }
+        });
+      }, { rootMargin: '200px' });
+      imgs.forEach(function(img) { observer.observe(img); });
+    } else {
+      imgs.forEach(function(img) { img.src = img.dataset.src; });
+    }
+  }
+  // 商详打开时重新初始化懒加载
+  document.addEventListener('DOMContentLoaded', loadLazy);
+  document.addEventListener('detailOpened', loadLazy);
+  // MutationObserver监听商详内容变化
+  var mo = new MutationObserver(function() { setTimeout(loadLazy, 50); });
+  document.addEventListener('DOMContentLoaded', function() {
+    var detailEl = document.getElementById('detailTextEl') || document.querySelector('.product-detail');
+    if (detailEl) mo.observe(detailEl, { childList: true, subtree: true });
+    else mo.observe(document.body, { childList: true, subtree: false });
+  });
+})();
+</script>
+
 </body>
 </html>
