@@ -211,9 +211,10 @@ body {
   .phone-shell::before { display: none; }
   .phone-inner {
     width: 100%;
-    height: auto;
+    height: 100vh;
     border-radius: 0;
-    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
   }
   .desktop-info { display: none; }
 }
@@ -1993,20 +1994,19 @@ body {
           </div>
         </div>
 
-        <!-- Kinggang 1×5 Grid -->
-        <div class="kinggang-wrap" id="kinggang">
-          <div class="kg-item"><div class="kg-icon-wrap">📦</div><div class="kg-label">Orders</div></div>
-          <div class="kg-item"><div class="kg-icon-wrap">🛒</div><div class="kg-label">Cart</div></div>
-          <div class="kg-item"><div class="kg-icon-wrap">🏷</div><div class="kg-label">Coupons</div></div>
-          <div class="kg-item"><div class="kg-icon-wrap">🤝</div><div class="kg-label">Service</div></div>
-          <div class="kg-item"><div class="kg-icon-wrap">🕐</div><div class="kg-label">History</div></div>
-        </div>
-
         <!-- Main Scroll Content -->
         <div class="main-content" id="mainContent">
 
           <!-- FOR YOU TAB -->
           <div class="tab-content active" id="tab-foryou">
+            <!-- Kinggang 1×5 Grid (scrolls with content) -->
+            <div class="kinggang-wrap" id="kinggang">
+              <div class="kg-item"><div class="kg-icon-wrap">📦</div><div class="kg-label">Orders</div></div>
+              <div class="kg-item"><div class="kg-icon-wrap">🛒</div><div class="kg-label">Cart</div></div>
+              <div class="kg-item"><div class="kg-icon-wrap">🏷</div><div class="kg-label">Coupons</div></div>
+              <div class="kg-item"><div class="kg-icon-wrap">🤝</div><div class="kg-label">Service</div></div>
+              <div class="kg-item"><div class="kg-icon-wrap">🕐</div><div class="kg-label">History</div></div>
+            </div>
             <!-- Coupon Banner E -->
             <div class="coupon-banner-e">
               <div class="cbe-top">
@@ -2046,7 +2046,7 @@ body {
               <div class="trending-viral-grid">
                 <div class="viral-card" onclick="openProduct(1)">
                   <div class="viral-img-wrap">
-                    <img src="imgs/104004dg320kbnqkplc004hkv90.webp" loading="lazy">
+                    <img src="https://xhs-doc.xhscdn.com/104004dg320kbnqkplc004hkv90" loading="lazy">
                   </div>
                   <div class="viral-info">
                     <div class="viral-brand">谁裁初 · Silk Fashion</div>
@@ -2061,7 +2061,7 @@ body {
                 </div>
                 <div class="viral-card" onclick="openProduct(2)">
                   <div class="viral-img-wrap">
-                    <img src="imgs/104004dg320hvp22vlk02epmh64.webp" loading="lazy">
+                    <img src="https://xhs-doc.xhscdn.com/104004dg320hvp22vlk02epmh64" loading="lazy">
                   </div>
                   <div class="viral-info">
                     <div class="viral-brand">芽小七 · Handmade Bag</div>
@@ -2170,21 +2170,21 @@ const products = [
     originalPrice: "$605",
     sold: "3,600+ sold",
     shop: "Shui Cai Chu Studio · 谁裁初",
-    shopAvatar: "imgs/765f0a74ef3f.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ihngfne02005op0lj78vatn3qocqp8?imageView2/2/w/120/format/jpg",
     shopEmoji: "👘",
     likes: "128k",
     grad: "linear-gradient(135deg,#f5f0e8,#c8a882)",
     emoji: "👘",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320i2cstblc7fkbi4s4.webp", "imgs/104004dg320i2d1e5lc01hk51qg.webp", "imgs/104004dg320kbnqkplc004hkv90.webp", "imgs/104004dg320kbnv295k0mntijmg.webp", "imgs/104004dg320i2d5ej5e0v9i0ibc.webp"],
-    detailImg: "imgs/104004dg320i23nf3lc08ok72l0.webp",
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320i2cstblc7fkbi4s4", "https://xhs-doc.xhscdn.com/104004dg320i2d1e5lc01hk51qg", "https://xhs-doc.xhscdn.com/104004dg320kbnqkplc004hkv90", "https://xhs-doc.xhscdn.com/104004dg320kbnv295k0mntijmg", "https://xhs-doc.xhscdn.com/104004dg320i2d5ej5e0v9i0ibc"],
+    detailImg: "https://xhs-doc.xhscdn.com/104004dg320i23nf3lc08ok72l0",
     detailImages: [
-      { url: "imgs/104004dg320i226lq5e0c5indj4.webp", caption: "Craft Detail · Mulberry silk hand-stitched lining" },
-      { url: "imgs/104004dg320i20l90lc02b1jjho.webp", caption: "Adult fit — relaxed structured silhouette" },
-      { url: "imgs/104004dg320i22dk15i08ss3g4k.webp", caption: "Styling · Pale blue × amber gold palette" },
-      { url: "imgs/104004dg320i22qem5i004848fg.webp", caption: "Kids styling · 100–140cm" },
-      { url: "imgs/104004dg320i2318kmo0eokt420.webp", caption: "Detail · Button closure & brocade trim" },
-      { url: "imgs/104004dg320i23cov5k03tr7hog.webp", caption: "Lifestyle · The little X wearing it in Beijing" }
+      { url: "https://xhs-doc.xhscdn.com/104004dg320i226lq5e0c5indj4", caption: "Craft Detail · Mulberry silk hand-stitched lining" },
+      { url: "https://xhs-doc.xhscdn.com/104004dg320i20l90lc02b1jjho", caption: "Adult fit — relaxed structured silhouette" },
+      { url: "https://xhs-doc.xhscdn.com/104004dg320i22dk15i08ss3g4k", caption: "Styling · Pale blue × amber gold palette" },
+      { url: "https://xhs-doc.xhscdn.com/104004dg320i22qem5i004848fg", caption: "Kids styling · 100–140cm" },
+      { url: "https://xhs-doc.xhscdn.com/104004dg320i2318kmo0eokt420", caption: "Detail · Button closure & brocade trim" },
+      { url: "https://xhs-doc.xhscdn.com/104004dg320i23cov5k03tr7hog", caption: "Lifestyle · The little X wearing it in Beijing" }
     ],
     detailText: "Shell: 100% mulberry silk (桑蚕丝)\nLining: Silk-blend hand-stitched\nClosure: Traditional knotted button (盘扣)\nSizes (Adult): XS / S / M / L / XL / XXL\nSizes (Kids): 100 / 110 / 120 / 130 / 140 cm\nColor: Pale blue × amber gold (青蓝×琥珀金)\nCare: Hand wash cold, lay flat to dry\nProduction: Made to order · 15 business days\nShips from: Beijing · Free shipping",
     tags: [
@@ -2213,12 +2213,12 @@ const products = [
     grad: "linear-gradient(135deg,#c8a95a,#7a5c1e)",
     emoji: "🐯",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320hvp22vlk02epmh64.webp", "imgs/104004dg320i1nu6ele01epjmkg.webp", "imgs/104004dg320i1o3895k0f8lgr3k.webp", "imgs/104004dg320i1o5qo5i01ftd49g.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320hvp22vlk02epmh64", "https://xhs-doc.xhscdn.com/104004dg320i1nu6ele01epjmkg", "https://xhs-doc.xhscdn.com/104004dg320i1o3895k0f8lgr3k", "https://xhs-doc.xhscdn.com/104004dg320i1o5qo5i01ftd49g"],
     detailImages: [
-      { url: "imgs/104004dg320i2dha75c0cnj2p6k.webp", caption: "Craft & materials · Handwoven bamboo + embroidered tiger" },
-      { url: "imgs/104004dg320i2dndc6o0fp9mj1o.webp", caption: "Design highlights" },
-      { url: "imgs/104004dg320i201g85c0ahgebug.webp", caption: "Artisan at work · Guilin, Guangxi" },
-      { url: "imgs/104004dg320i1uu345k0fmr6gdg.webp", caption: "Styling · The X Bag as spotted in Beijing" }
+      { url: "https://xhs-doc.xhscdn.com/104004dg320i2dha75c0cnj2p6k", caption: "Craft & materials · Handwoven bamboo + embroidered tiger" },
+      { url: "https://xhs-doc.xhscdn.com/104004dg320i2dndc6o0fp9mj1o", caption: "Design highlights" },
+      { url: "https://xhs-doc.xhscdn.com/104004dg320i201g85c0ahgebug", caption: "Artisan at work · Guilin, Guangxi" },
+      { url: "https://xhs-doc.xhscdn.com/104004dg320i1uu345k0fmr6gdg", caption: "Styling · The X Bag as spotted in Beijing" }
     ],
     detailText: "Body: Hand-woven natural bamboo strips\nEmbroidery: Traditional tiger head motif (虎头) · hand-stitched\nHardware: Brass tone accents\nSize: ~28cm × 22cm × 12cm\nClosure: Magnetic snap + inner zipper pocket\nStrap: Detachable · shoulder or crossbody\nOrigin: Guilin, Guangxi · 19-year artisan workshop\nCare: Wipe gently; avoid prolonged moisture\nShips from: Guilin, Guangxi · Free shipping",
     tags: [
@@ -2237,20 +2237,20 @@ const products = [
     originalPrice: "$337",
     sold: "3,519+ sold",
     shop: "Zhen San Huan · 臻三环",
-    shopAvatar: "imgs/7e2996d8297a.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/6053fb2e548ec57f4b342fc8.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🍳",
     likes: "42k",
     grad: "linear-gradient(135deg,#3a2a1a,#8B4513)",
     emoji: "🍳",
     imgClass: "",
-    imgs: ["imgs/104004dg320i408ur5c0e35h9l8.webp", "imgs/344d31583329.webp", "imgs/82ab7c6bacd7.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320i408ur5c0e35h9l8", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31uvcbv1a3m005n8c9mmkj7ahuaum7oo?imageView2/2/w/800/q/80/format/webp", "https://mall-i1.xhscdn.com/material_space/6527d69b-fb5d-41a6-9777-2544b4b6b19e?imageView2/2/w/800/q/80/format/webp"],
     story: "Zhen San Huan (臻三环) is the most revered iron wok brand from Zhangqiu, Shandong — China's ancient iron forging capital. Each wok is hammered 30,000+ times by hand, then blue-fire seasoned through traditional thermal oxidation.",
     detailImages: [
-      { url: "imgs/aeb613076ec5.webp", caption: "Iron wok detail — hand-forged texture" },
-      { url: "imgs/5a161bbd54b6.webp", caption: "Wok interior — blue-fire seasoned surface" },
-      { url: "imgs/f3590adb6603.webp", caption: "Wok handle and construction" },
-      { url: "imgs/7e91a116dfe1.webp", caption: "Size and proportion reference" },
-      { url: "imgs/f620ad6dd019.webp", caption: "Cooking in action — wok hei stir fry" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o030ov4g8lo3u005n8c9mmkj7ahaie6hc0?imageView2/2/w/800/q/80/format/webp", caption: "Iron wok detail — hand-forged texture" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o030ov4g8mvjo005n8c9mmkj7ahcu34ma8?imageView2/2/w/800/q/80/format/webp", caption: "Wok interior — blue-fire seasoned surface" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o030ov4g8pk3o005n8c9mmkj7ahv9ovqa0?imageView2/2/w/800/q/80/format/webp", caption: "Wok handle and construction" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031oet3knh4s005n8c9mmkj7ah12np1e0?imageView2/2/w/800/q/80/format/webp", caption: "Size and proportion reference" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o03190g45gpgq005n8c9mmkj7ahijlibgo?imageView2/2/w/800/q/80/format/webp", caption: "Cooking in action — wok hei stir fry" }
     ],
     detailText: "Material: Zhangqiu iron (章丘铁锅)\nForging: 30,000+ hand hammer strikes\nSurface: Blue-fire thermal seasoned (古法烤蓝)\nSize: 34cm · Approx 1.4kg lightweight\nCompatibility: Gas, induction, electric, open flame\nCare: Season before first use, hand wash, dry immediately\nShips from: Jinan, Shandong · Free shipping",
     hotReview: "My stir-fry tasted completely different the first time — crispier, more wok hei. Worth every cent.",
@@ -2285,19 +2285,19 @@ const products = [
     originalPrice: "$125",
     sold: "840+ sold",
     shop: "Tangsong · 唐颂",
-    shopAvatar: "imgs/60448ad57413.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/65f4235fabd67e0001a04a05.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🥣",
     likes: "8.2k",
     grad: "linear-gradient(135deg,#f5f0e8,#d4c5a9)",
     emoji: "🥣",
     imgClass: "",
-    imgs: ["imgs/104004dg320j8vp0b6o0esplup0.webp", "imgs/8576776e5cdc.webp", "imgs/6de93241d2e5.webp", "imgs/023dab0a3c5e.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j8vp0b6o0esplup0", "https://mall-i1.xhscdn.com/arkgoods/1040g0o0319g6a39u6o005nqgptlg8i4epk7cv7g?imageView2/2/w/800/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o0319g6a3jq6o005nqgptlg8i4ejamvjm0?imageView2/2/w/800/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o0319g6a3e16m005nqgptlg8i4eo4h5dk8?imageView2/2/w/800/q/80/format/webp"],
     story: "Tangsong (唐颂) brings French-influenced elegance to Chinese dining. Cangyan series: bas-relief botanical patterns on cream-white porcelain — Song dynasty garden aesthetics reimagined for the modern table.",
     detailImages: [
-      { url: "imgs/b2211ae1afbf.webp", caption: "Porcelain bowl — cream white bas-relief detail" },
-      { url: "imgs/fa77358c93ed.webp", caption: "Set of 2 — botanical relief pattern" },
-      { url: "imgs/0edbf212c384.webp", caption: "Table styling — French-Chinese aesthetic" },
-      { url: "imgs/417eb170fb21.webp", caption: "Glaze finish close-up" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o0320co4a2f5e005nqgptlg8i4eegok2l0?imageView2/2/w/800/q/80/format/webp", caption: "Porcelain bowl — cream white bas-relief detail" },
+      { url: "https://mall-i1.xhscdn.com/b/ca55fe49-d989-45b5-b996-3eac383ade9f?imageView2/2/w/800/q/80/format/webp", caption: "Set of 2 — botanical relief pattern" },
+      { url: "https://mall-i1.xhscdn.com/b/4a6ab4c0-6c00-4217-b966-2f399beb15d5?imageView2/2/w/800/q/80/format/webp", caption: "Table styling — French-Chinese aesthetic" },
+      { url: "https://mall-i1.xhscdn.com/b/30cfedad-f47a-46d7-8138-396e37451eb7?imageView2/2/w/800/q/80/format/webp", caption: "Glaze finish close-up" }
     ],
     detailText: "Material: High-fired porcelain\nStyle: French bas-relief cream white glaze\nSize: 14cm diameter large rice bowl\nSet: 2 pieces\nDishwasher & microwave safe\nShips from: Xingtai, Hebei · Free shipping",
     hotReview: "The relief detail is so fine — feels far more expensive than the price.",
@@ -2332,20 +2332,20 @@ const products = [
     originalPrice: "$563",
     sold: "312+ sold",
     shop: "Yinsung · 银桑",
-    shopAvatar: "imgs/5ae98b1e94b8.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/58a9a4cc-34ad-3e3b-85ab-1d0869bc0dcb?imageView2/2/w/120/format/jpg",
     shopEmoji: "🌙",
     likes: "3.4k",
     grad: "linear-gradient(135deg,#e8d4e0,#c4a0b8)",
     emoji: "🌙",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320j902fuli05j49440.webp", "imgs/934349492b6c.webp", "imgs/8a62c7d2e1fc.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j902fuli05j49440", "https://mall-i1.xhscdn.com/arkgoods/1040g0o0320j4hq1jlc1g5n9dhuo4go8lu6jhr00?imageView2/2/w/800/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no320j4hq2q5k0g5n9dhuo4go8ldpocneg?imageView2/2/w/800/q/80/format/webp"],
     story: "Yinsung sources Lenzing 100S Tencel — the softest grade — and pairs it with mulberry silk fill for a summer quilt that feels like sleeping in a cloud. French gradient colorway in iris pink.",
     detailImages: [
-      { url: "imgs/84b71385971f.webp", caption: "Silk quilt — iris pink colorway" },
-      { url: "imgs/934349492b6c.webp", caption: "Gradient color detail — Tencel + silk surface" },
-      { url: "imgs/8a62c7d2e1fc.webp", caption: "Bedroom lifestyle — draped over bed" },
-      { url: "imgs/9b46e695abe8.webp", caption: "Fabric close-up — ultra-soft 100S Tencel weave" },
-      { url: "imgs/7072988b8d74.webp", caption: "Color palette overview" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o0320j4hq185e005n9dhuo4go8lrrbqbko?imageView2/2/w/800/q/80/format/webp", caption: "Silk quilt — iris pink colorway" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o0320j4hq1jlc1g5n9dhuo4go8lu6jhr00?imageView2/2/w/800/q/80/format/webp", caption: "Gradient color detail — Tencel + silk surface" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no320j4hq2q5k0g5n9dhuo4go8ldpocneg?imageView2/2/w/800/q/80/format/webp", caption: "Bedroom lifestyle — draped over bed" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031s5kdq075c005n9dhuo4go8lpmuidbo?imageView2/2/w/800/q/80/format/webp", caption: "Fabric close-up — ultra-soft 100S Tencel weave" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031ug1fcmuhu005n9dhuo4go8l29l69ro?imageView2/2/w/800/q/80/format/webp", caption: "Color palette overview" }
     ],
     detailText: "Shell: 100S Lenzing Tencel + silk blend\nFill: Mulberry silk (桑蚕丝)\nSize: 200×230cm\nColor: Iris Pink (鸢尾粉)\nCare: Dry clean recommended\nShips from: Jiaxing, Zhejiang",
     hotReview: "I've tried Japanese and French duvets — this outperforms both. The coolness is immediate.",
@@ -2385,7 +2385,7 @@ const products = [
     grad: "linear-gradient(135deg,#5C7A5C,#3d5e3d)",
     emoji: "🎨",
     imgClass: "",
-    imgs: ["imgs/104004dg320iatt8e5ke69h3coo.webp", "imgs/104004dg320iau1bile05e6ah0o.webp", "imgs/104004dg320iau7folk0f685ma0.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320iatt8e5ke69h3coo", "https://xhs-doc.xhscdn.com/104004dg320iau1bile05e6ah0o", "https://xhs-doc.xhscdn.com/104004dg320iau7folk0f685ma0"],
     story: "原创手工扎染原木风客厅民宿装饰艺术隔断帘。Each piece is hand-tied and naturally dyed — a slow craft adapted for contemporary living spaces. No two panels are alike.",
     detailText: "Material: 100% natural linen\nDye method: Hand tie-dye (扎染)\nStyle: Wabi-sabi / natural wood\nCustomizable: Size, density\nCare: Hand wash cold\nShips from: China",
     hotReview: "Hung this in my living room — became the focal point of every guest conversation.",
@@ -2420,19 +2420,19 @@ const products = [
     originalPrice: "$200",
     sold: "1,230+ sold",
     shop: "Xiao Yin Yu Ye · 小隐于野",
-    shopAvatar: "imgs/729dbb16cc38.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ehb3ffagm605oij4nhk1k3ffaj7g3g?imageView2/2/w/120/format/jpg",
     shopEmoji: "🧸",
     likes: "12k",
     grad: "linear-gradient(135deg,#e8dcc8,#b0956a)",
     emoji: "🧸",
     imgClass: "",
-    imgs: ["imgs/104004dg320j90j5nle1t8lh32c.webp", "imgs/13205cc8c9c9.webp", "imgs/255e41853d7a.webp", "imgs/97dd113c1d57.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j90j5nle1t8lh32c", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31toqj0kg080g5oij4nhk1k3faf2a0jg?imageView2/2/w/3944/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031toqj0lg6i005oij4nhk1k3f0nshc60?imageView2/2/w/3944/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31toqjljp080g5oij4nhk1k3fk22di60?imageView2/2/w/3944/q/80/format/webp"],
     story: "Small Hidden in the Wild (小隐于野) brings vintage European texture to Chinese cotton-linen. The Longshelan throw is woven with a traditional jacquard pattern — soft, breathable, equally at home on a sofa or bed.",
     detailImages: [
-      { url: "imgs/5e19f40f9e4f.webp", caption: "Jacquard throw — sage green colorway" },
-      { url: "imgs/21d064e2ebdb.webp", caption: "Draped over sofa — lifestyle shot" },
-      { url: "imgs/684472fa7d39.webp", caption: "Fabric weave texture detail" },
-      { url: "imgs/1342724f3599.webp", caption: "Size and fold reference" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31toqj0kg080g5oij4nhk1k3faf2a0jg?imageView2/2/w/800/q/80/format/webp", caption: "Jacquard throw — sage green colorway" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031toqj0lg6i005oij4nhk1k3f0nshc60?imageView2/2/w/800/q/80/format/webp", caption: "Draped over sofa — lifestyle shot" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o03207a5j8e5e005oij4nhk1k3fsussg50?imageView2/2/w/800/q/80/format/webp", caption: "Fabric weave texture detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o03207a5j925g005oij4nhk1k3fie53e60?imageView2/2/w/800/q/80/format/webp", caption: "Size and fold reference" }
     ],
     detailText: "Material: Cotton-linen blend · jacquard weave\nSize: 230×250cm (approx. 3.8 lbs)\nColor: Meilin Chunxiao (sage green double-sided)\nUse: Sofa throw / bed blanket\nCare: Machine wash gentle\nShips from: Nantong, Jiangsu · Free shipping · 48-hr dispatch",
     hotReview: "Draped this over my reading chair and it completely transformed the room. The texture is so much richer in person.",
@@ -2467,19 +2467,19 @@ const products = [
     originalPrice: "$308",
     sold: "680+ sold",
     shop: "Xiao Yin Yu Ye · 小隐于野",
-    shopAvatar: "imgs/729dbb16cc38.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ehb3ffagm605oij4nhk1k3ffaj7g3g?imageView2/2/w/120/format/jpg",
     shopEmoji: "🛏",
     likes: "19k",
     grad: "linear-gradient(135deg,#3d2b1f,#6b4c35)",
     emoji: "🛏",
     imgClass: "",
-    imgs: ["imgs/104004dg320j90tqsle0d4f6f2c.webp", "imgs/42723f8af53c.webp", "imgs/d861afc40334.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j90tqsle0d4f6f2c", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031tub5m1uha005oij4nhk1k3f63v56ao?imageView2/2/w/1620/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31tub5m2i0s0g5oij4nhk1k3fs6hvi18?imageView2/2/w/1620/q/80/format/webp"],
     story: "小隐于野 ('Hermit in the Wild') crafts bedding for those who believe sleep is a ritual. The Wanxiang Evening Fragrance set features an exclusive jacquard waffle weave in deep cocoa brown — 20% hemp + 80% cotton, Class A certified safe for babies.",
     detailImages: [
-      { url: "imgs/2af33ce4718a.webp", caption: "Bedding set — dark cocoa brown colorway" },
-      { url: "imgs/9ef1a631e19d.webp", caption: "Waffle weave texture — hemp-cotton blend" },
-      { url: "imgs/55002968da5a.webp", caption: "Full bedroom setup" },
-      { url: "imgs/00f871b4e6fc.webp", caption: "Duvet cover detail" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031tub5m1uha005oij4nhk1k3f63v56ao?imageView2/2/w/800/q/80/format/webp", caption: "Bedding set — dark cocoa brown colorway" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31tub5m2i0s0g5oij4nhk1k3fs6hvi18?imageView2/2/w/800/q/80/format/webp", caption: "Waffle weave texture — hemp-cotton blend" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o03206beeo75k005oij4nhk1k3f0niua0o?imageView2/2/w/800/q/80/format/webp", caption: "Full bedroom setup" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no3206been25i0g5oij4nhk1k3f7s8fqd0?imageView2/2/w/800/q/80/format/webp", caption: "Duvet cover detail" }
     ],
     detailText: "Brand: 小隐于野 (Xiao Yin Yu Ye)\nPattern: Evening Fragrance jacquard waffle weave\nMaterial: 20% hemp + 80% cotton (face), hemp-cotton blend (reverse)\nSet includes: duvet cover + flat sheet + 2 pillowcases\nGrade: Class A maternal & infant safe\nColor: Dark cocoa brown\nCare: Machine wash cold, tumble dry low",
     hotReview: "The deep cocoa color is so rich in person — photos don't do it justice. Breathable and heavy enough to feel luxurious.",
@@ -2510,7 +2510,7 @@ const products = [
     grad: "linear-gradient(135deg,#d4c5a9,#8a7558)",
     emoji: "💡",
     imgClass: "",
-    imgs: ["imgs/104004dg320j922vd5k00nu3pso.webp", "imgs/104004dg320ibf5s95e0a8n4u34.webp", "imgs/104004dg320ibfblm5c0an8caok.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j922vd5k00nu3pso", "https://xhs-doc.xhscdn.com/104004dg320ibf5s95e0a8n4u34", "https://xhs-doc.xhscdn.com/104004dg320ibfblm5c0an8caok"],
     story: "中古侘寂风主卧室复古餐厅客厅主灯。DaWn creates lighting for those who believe a room should feel like a sanctuary — handmade paper shade in warm natural tones, inspired by washi craft filtered through a Chinese sensibility.",
     detailText: "Style: Wabi-sabi / mid-century\nShade: Handmade natural paper\nBulb: E27 LED warm white recommended\nCord: Adjustable 80–200cm\nVoltage: 110V-240V adaptable\nShips from: China (freight item)",
     hotReview: "This light changed the energy of my bedroom. Guests ask about it every time.",
@@ -2545,19 +2545,19 @@ const products = [
     originalPrice: "$200",
     sold: "347+ sold",
     shop: "Zhushi · 驻时",
-    shopAvatar: "imgs/4c41eb7d0677.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/98feeee8-3f94-3859-b13a-8bd50a7d97f4?imageView2/2/w/120/format/jpg",
     shopEmoji: "🏮",
     likes: "3.2k",
     grad: "linear-gradient(135deg,#1a2a1a,#2D5016)",
     emoji: "🏮",
     imgClass: "",
-    imgs: ["imgs/104004dg320j92mu1lc09nlvalg.webp", "imgs/7d1705ca9ccd.webp", "imgs/8834e9f96690.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j92mu1lc09nlvalg", "https://mall-i1.xhscdn.com/arkgoods/1040g0o0313bd7fk6j8005obnv8s0kp6pr3cmv9g?imageView2/2/w/1620/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o0313bd7fl512005obnv8s0kp6pntufdc0?imageView2/2/w/1620/q/80/format/webp"],
     story: "Zhushi's Yuanshan lamp blends French silhouette with Chinese ink-painting mountain aesthetics — a soft glow that transforms any desk into a contemplative corner.",
     detailImages: [
-      { url: "imgs/cb2f210493ed.webp", caption: "Yuanshan lamp — mountain silhouette lit up" },
-      { url: "imgs/fc251ac7d491.webp", caption: "Lamp form — side profile" },
-      { url: "imgs/496c4029b2e9.webp", caption: "Desk setup — ambient warm glow" },
-      { url: "imgs/ab1aad00b16c.webp", caption: "Size reference and packaging" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o0313bd7fk6j8005obnv8s0kp6pr3cmv9g?imageView2/2/w/800/q/80/format/webp", caption: "Yuanshan lamp — mountain silhouette lit up" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o0313bd7fkmj8005obnv8s0kp6p0o9qr7g?imageView2/2/w/800/q/80/format/webp", caption: "Lamp form — side profile" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o0313bd7fl512005obnv8s0kp6pntufdc0?imageView2/2/w/800/q/80/format/webp", caption: "Desk setup — ambient warm glow" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o0313bd77tq20005obnv8s0kp6p7bgjmig?imageView2/2/w/800/q/80/format/webp", caption: "Size reference and packaging" }
     ],
     detailText: "Style: Yuanshan mountain silhouette · French-Chinese\nLight source: LED warm white included\nPower: 220V button switch\nDimensions: H35 × W20cm\nShips from: Dongguan, Guangdong",
     hotReview: "The mountain silhouette at night makes every late-night work session feel like a ink painting.",
@@ -2592,19 +2592,19 @@ const products = [
     originalPrice: "$158",
     sold: "2,140+ sold",
     shop: "Nonsound · 静谧有声",
-    shopAvatar: "imgs/0875ecf1fbf6.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30tukg0hrke005p3pm06qmqclbjo6e38?imageView2/2/w/120/format/jpg",
     shopEmoji: "🏺",
     likes: "6.1k",
     grad: "linear-gradient(135deg,#f5f0e8,#e0d8cc)",
     emoji: "🏺",
     imgClass: "",
-    imgs: ["imgs/104004dg320j9323smo0f91k05s.webp", "imgs/36a59bb02792.webp", "imgs/52f368355669.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j9323smo0f91k05s", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031041peq0m2005p3pm06qmqclctjfimo?imageView2/2/w/1500/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031041pefu64005p3pm06qmqclpbmn1hg?imageView2/2/w/1500/q/80/format/webp"],
     story: "Nonsound Studio (静谧有声) uses 3D printing to realize vessel forms impossible on a wheel. The Yuhu vase references the classic Chinese jade bottle reimagined with contemporary material language. Waterproof for real flowers.",
     detailImages: [
-      { url: "imgs/c8c70970973f.webp", caption: "Yuhu vase — silk white finish" },
-      { url: "imgs/8b47d6733c88.webp", caption: "Vase proportions — classical jade bottle form" },
-      { url: "imgs/b7a06c5c9f37.webp", caption: "Styled with dried flowers" },
-      { url: "imgs/048495b6673b.webp", caption: "Close-up surface texture" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031041peq0m2005p3pm06qmqclctjfimo?imageView2/2/w/800/q/80/format/webp", caption: "Yuhu vase — silk white finish" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o0310kvnfl76e005p3pm06qmqclj497hg0?imageView2/2/w/800/q/80/format/webp", caption: "Vase proportions — classical jade bottle form" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031041pej1ls005p3pm06qmqclu2d81tg?imageView2/2/w/800/q/80/format/webp", caption: "Styled with dried flowers" },
+      { url: "https://mall-i1.xhscdn.com/b/d20373ff-4149-4b6d-92ea-60abe716e71f?imageView2/2/w/800/q/80/format/webp", caption: "Close-up surface texture" }
     ],
     detailText: "Material: PLA biodegradable resin\nColor: Silk White\nDimensions: 96×96×245mm\nWaterproof: Yes\nCare: Wipe clean\nShips from: Foshan, Guangdong",
     hotReview: "I've bought three now — one for flowers, one on my bookshelf, one gifted. The proportions are just perfect.",
@@ -2639,19 +2639,19 @@ const products = [
     originalPrice: "$715",
     sold: "183+ sold",
     shop: "FNJI · 梵几",
-    shopAvatar: "imgs/e73bc2c5ac02.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/65fbd2708395520001dda204.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🪑",
     likes: "12k",
     grad: "linear-gradient(135deg,#c4a882,#8B6347)",
     emoji: "🪑",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320ja3o8qmo09f78irk.webp", "imgs/5f70428541dd.webp", "imgs/db9624383eb1.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320ja3o8qmo09f78irk", "https://mall-i1.xhscdn.com/arkgoods/4908ca56c6b2c8b6c5fb4095c5447278b2a5690e?imageView2/2/w/800/q/80/format/webp", "https://mall-i1.xhscdn.com/material_space/80a648ac-ec1d-4d2a-8926-b059cdf06b32?imageView2/2/w/800/q/80/format/webp"],
     story: "FNJI (梵几) is one of China's most respected furniture designers — featured in Wallpaper* and Dezeen. The Teng Jia chair pairs solid ash wood with handwoven rattan, referencing Chinese literati aesthetics. Pre-order ships in 8 weeks.",
     detailImages: [
-      { url: "imgs/60c9008ddbd0.webp", caption: "Rattan stackable chair — ash wood frame" },
-      { url: "imgs/5f70428541dd.webp", caption: "Chair set — stacked configuration" },
-      { url: "imgs/31beb8b5f029.webp", caption: "Lifestyle — dining space setting" },
-      { url: "imgs/95b1ccc3b888.webp", caption: "Rattan weave detail" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031041pefu64005p3pm06qmqclpbmn1hg?imageView2/2/w/800/q/80/format/webp", caption: "Rattan stackable chair — ash wood frame" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/4908ca56c6b2c8b6c5fb4095c5447278b2a5690e?imageView2/2/w/800/q/80/format/webp", caption: "Chair set — stacked configuration" },
+      { url: "https://mall-i1.xhscdn.com/material_space/cdd9cec5-5275-41a8-b411-9b38f2ba20e2?imageView2/2/w/800/q/80/format/webp", caption: "Lifestyle — dining space setting" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o03125l771b1m005nip26b08r0is6dmuog?imageView2/2/w/800/q/80/format/webp", caption: "Rattan weave detail" }
     ],
     detailText: "Material: Solid ash wood + natural rattan\nColor: Koala Grey\nFeature: Stackable up to 6 chairs\nProduction: Made to order · 8 weeks lead time\nCare: Wipe with damp cloth\nShips from: Tianjin",
     hotReview: "Worth every penny and every week of waiting. Looks better than anything at Design Within Reach.",
@@ -2686,19 +2686,19 @@ const products = [
     originalPrice: "$238",
     sold: "1,560+ sold",
     shop: "None · 無一物",
-    shopAvatar: "imgs/e4a85f24403f.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30odfl1avi6005o0ne5ug8tss9gqolt0?imageView2/2/w/120/format/jpg",
     shopEmoji: "🖼",
     likes: "9.8k",
     grad: "linear-gradient(135deg,#1B3A6B,#8B1A1A)",
     emoji: "🖼",
     imgClass: "",
-    imgs: ["imgs/104004dg320j96esl6o0954n8n4.webp", "imgs/0730dbd31a86.webp", "imgs/da8616e7bcc2.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j96esl6o0954n8n4", "https://mall-i1.xhscdn.com/arkgoods/1040g3no320f1tnui5e0g5o0ne5ug8tssne9nmfg?imageView2/2/w/1000/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31vuqf6df480g5o0ne5ug8tssco5g4o0?imageView2/2/w/1600/q/80/format/webp"],
     story: "None (無一物) specializes in Chinese embroidery in contemporary French gallery framing. The Koi Auspicious series renders koi fish in raised embroidery thread — tactile, dimensional, full of cultural resonance. Ready to hang.",
     detailImages: [
-      { url: "imgs/1095feeb27a8.webp", caption: "Koi embroidery wall art — full framed piece" },
-      { url: "imgs/4fc10146b9bc.webp", caption: "Embroidery thread detail — raised texture" },
-      { url: "imgs/6f12b23971d7.webp", caption: "Koi fish motif close-up" },
-      { url: "imgs/b976dd376ad3.webp", caption: "Installed on wall — interior styling" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no320f1tnui5e0g5o0ne5ug8tssne9nmfg?imageView2/2/w/800/q/80/format/webp", caption: "Koi embroidery wall art — full framed piece" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31vuqf6be54105o0ne5ug8tssl9ggjj0?imageView2/2/w/800/q/80/format/webp", caption: "Embroidery thread detail — raised texture" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031utadkln1u005o0ne5ug8tssj4ac2go?imageView2/2/w/800/q/80/format/webp", caption: "Koi fish motif close-up" },
+      { url: "https://mall-i1.xhscdn.com/b/fb89ebbf-d5b8-4b9c-8d14-ddd96153fa2d?imageView2/2/w/800/q/80/format/webp", caption: "Installed on wall — interior styling" }
     ],
     detailText: "Style: Chinese embroidery · French-Chinese mid-century frame\nSubject: Koi (锦鲤呈祥 — auspicious)\nDimensions: 70×90cm vertical\nFrame: Solid wood · no glass\nCraft: Raised embroidery thread on fabric\nShips from: Jinhua, Zhejiang · Free shipping",
     hotReview: "The embroidery has real depth and texture — stunning in person.",
@@ -2733,19 +2733,19 @@ const products = [
     originalPrice: "$107",
     sold: "37,000+ sold",
     shop: "Natural World · 南窗物",
-    shopAvatar: "imgs/55a4eca143f9.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31odkdn8g6m005p4bpm446nn5rec2je8?imageView2/2/w/120/format/jpg",
     shopEmoji: "🌿",
     likes: "24k",
     grad: "linear-gradient(135deg,#4A7C59,#2a4a38)",
     emoji: "🌿",
     imgClass: "",
-    imgs: ["imgs/104004dg320j97nivli7d1ftr28.webp", "imgs/7d861ae924a5.webp", "imgs/3e194d1d6104.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j97nivli7d1ftr28", "https://mall-i1.xhscdn.com/arkgoods/1040g0o03206orlvd5g005p4bpm446nn578n3td8?imageView2/2/w/750/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31j7lmjdbig0g5p4bpm446nn5voo8pc8?imageView2/2/w/750/q/80/format/webp"],
     story: "Natural World (南窗物) creates home fragrances rooted in Chinese natural tradition. The Zhenfeng (枕风) series captures mountain rain and forest air — spray on fabric before sleep for a deeply Eastern sensory journey. 37,000+ sold.",
     detailImages: [
-      { url: "imgs/b2d98291b695.webp", caption: "Zhenfeng fabric spray bottle" },
-      { url: "imgs/7f8af2187c3d.webp", caption: "Spray usage on bedding" },
-      { url: "imgs/3c1c8c7f1d7f.webp", caption: "Scent family variants" },
-      { url: "imgs/ecabe60a1331.webp", caption: "Product details and ingredients" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o03206orlvd5g005p4bpm446nn578n3td8?imageView2/2/w/800/q/80/format/webp", caption: "Zhenfeng fabric spray bottle" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31j7ii9872esg5p4bpm446nn5lf9r2d8?imageView2/2/w/800/q/80/format/webp", caption: "Spray usage on bedding" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031j7ii9hmj6705p4bpm446nn5j0r776o?imageView2/2/w/800/q/80/format/webp", caption: "Scent family variants" },
+      { url: "https://mall-i1.xhscdn.com/b/3e9e2663-15d3-40f1-a190-aa31150c833e?imageView2/2/w/800/q/80/format/webp", caption: "Product details and ingredients" }
     ],
     detailText: "Series: Zhenfeng · Bao Yu Su Shan (枕风·暴雨宿山)\nScent: Eastern woody-herbal blend\nVolume: 120ml spray\nUse: Fabric spray for bedding, pillows, curtains, clothing\nShips from: Jinan, Shandong · Free shipping",
     hotReview: "Spray this on my curtains — the whole room smells like mountains after rain. Absolutely obsessed.",
@@ -2780,19 +2780,19 @@ const products = [
     originalPrice: "$134",
     sold: "13,000+ sold",
     shop: "CommonSense · 空山时",
-    shopAvatar: "imgs/42d5c719144b.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/64804d69f3308ffc7dc789ee.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🌿",
     likes: "15k",
     grad: "linear-gradient(135deg,#2a1a0a,#5a3a1a)",
     emoji: "🌿",
     imgClass: "",
-    imgs: ["imgs/104004dg320j97v24le08gq8p64.webp", "imgs/47cc2bfc4318.webp", "imgs/26a754de8a45.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j97v24le08gq8p64", "https://mall-i1.xhscdn.com/arkgoods/1040g0o0320eejvrn5c005otmr0u9i07b8vmqhio?imageView2/2/w/1241/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031osft6se0u005otmr0u9i07bbdgu5tg?imageView2/2/w/1187/q/80/format/webp"],
     story: "Common Sense (空山时) makes incense for the quiet hours. Shen Jing (寐·凝神) combines Rhodiola root and aged agarwood — traditional Chinese herbs for calming the mind. Each stick burns ~30 minutes.",
     detailImages: [
-      { url: "imgs/77670c862bce.webp", caption: "Night incense set — sticks and cedar holder" },
-      { url: "imgs/786eb6b8bd1f.webp", caption: "Incense burning — ritual atmosphere" },
-      { url: "imgs/d2b63c2e60be.webp", caption: "Rhodiola and agarwood ingredients" },
-      { url: "imgs/2b02b24665a6.webp", caption: "Product packaging and box" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o0320eejvrn5c005otmr0u9i07b8vmqhio?imageView2/2/w/800/q/80/format/webp", caption: "Night incense set — sticks and cedar holder" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31osft6regu0g5otmr0u9i07bik2pdro?imageView2/2/w/800/q/80/format/webp", caption: "Incense burning — ritual atmosphere" },
+      { url: "https://mall-i1.xhscdn.com/b/c6be7f3f-9181-4dde-99a1-b6d1089e4ab0?imageView2/2/w/800/q/80/format/webp", caption: "Rhodiola and agarwood ingredients" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o030pefb19nk6005otmr0u9i07bgi2mhh0?imageView2/2/w/800/q/80/format/webp", caption: "Product packaging and box" }
     ],
     detailText: "Scent: Shen Jing Night (寐·凝神)\nIngredients: Rhodiola (红景天) + Agarwood (沉香)\nBurn time: ~30 min per stick\nIncludes: Incense sticks + cedar holder\nShips from: Hangzhou, Zhejiang · Free shipping",
     hotReview: "I light one before bed every night. My sleep quality changed completely in the first week.",
@@ -2827,19 +2827,19 @@ const products = [
     originalPrice: "$254",
     sold: "2,870+ sold",
     shop: "Jiushi · 久狮",
-    shopAvatar: "imgs/077df4c948b0.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo315r8odm2io005n1kshnhrh1f6cmg9co?imageView2/2/w/120/format/jpg",
     shopEmoji: "👗",
     likes: "18k",
     grad: "linear-gradient(135deg,#c4c8d0,#8a8e96)",
     emoji: "👗",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320j9nddo6o0crnp7l8.webp", "imgs/344776024f11.webp", "imgs/789e9bcf7e64.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j9nddo6o0crnp7l8", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31puq5gp05s0g5n1kshnhrh1f984ijm8?imageView2/2/w/1500/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31puq5gin6s0g5n1kshnhrh1ff54pjco?imageView2/2/w/1500/q/80/format/webp"],
     story: "Jiushi (久狮) is one of the most-followed new-Chinese-style designers on Xiaohongshu. Their acetate skirts have silky drape that moves beautifully when walking — the pearl grey edition has become a wardrobe staple.",
     detailImages: [
-      { url: "imgs/b783f96140cc.webp", caption: "Acetate skirt — pearl grey styling" },
-      { url: "imgs/6edc535c37ca.webp", caption: "Flow and drape — movement shot" },
-      { url: "imgs/cc73438fcda9.webp", caption: "High waist silhouette" },
-      { url: "imgs/383ca8e35c4a.webp", caption: "Color and fabric close-up" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31puq5ff2lseg5n1kshnhrh1fetggao0?imageView2/2/w/800/q/80/format/webp", caption: "Acetate skirt — pearl grey styling" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31puq5gp05s0g5n1kshnhrh1f984ijm8?imageView2/2/w/800/q/80/format/webp", caption: "Flow and drape — movement shot" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31puq5ffllu0g5n1kshnhrh1fv5gvqkg?imageView2/2/w/800/q/80/format/webp", caption: "High waist silhouette" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31puq7bo25o805n1kshnhrh1f0vgr9uo?imageView2/2/w/800/q/80/format/webp", caption: "Color and fabric close-up" }
     ],
     detailText: "Material: Acetate (醋酸) silk-luster fabric\nColor: Champagne/Pearl grey\nSilhouette: High-waist A-line midi skirt\nFit: Relaxed, flattering on all body types\nSeason: Spring/Summer/Autumn\nCare: Hand wash or dry clean\nShips from: Shanghai",
     hotReview: "I wore this to a wedding and four women asked where it was from.",
@@ -2874,19 +2874,19 @@ const products = [
     originalPrice: "$229",
     sold: "4,200+ sold",
     shop: "Huanxi Ramie · 欢囍文艺苎麻馆",
-    shopAvatar: "imgs/1282e9d87a00.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31esma8fo6o005n4b7sn4n2olvs5705g?imageView2/2/w/120/format/jpg",
     shopEmoji: "👔",
     likes: "22k",
     grad: "linear-gradient(135deg,#e8d4c0,#c4a882)",
     emoji: "👔",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320j9o2r0lc063442uc.webp", "imgs/6849e9423151.webp", "imgs/73d0b636922e.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j9o2r0lc063442uc", "https://mall-i1.xhscdn.com/b/fb8ec979-46f0-4f34-a534-3bd9733309cd?imageView2/2/w/1282/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31v5pi6ps1m7g5n4b7sn4n2olqfr8u98?imageView2/2/w/1282/q/80/format/webp"],
     story: "Ramie (苎麻) is one of China's oldest natural fibers. Huanxi's summer cardigan set features a Baoxiang flower print (宝相花 — sacred lotus-based mandala from Tang dynasty art) on cool-touch pure ramie.",
     detailImages: [
-      { url: "imgs/f714da555776.webp", caption: "Ramie cardigan set — Baoxiang print" },
-      { url: "imgs/3bd7404a172f.webp", caption: "Full outfit — bat sleeve drape" },
-      { url: "imgs/f4eb842665a8.webp", caption: "Print detail — Tang dynasty motif" },
-      { url: "imgs/fc9d3e6b6e30.webp", caption: "Fabric texture and ramie weave" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31v5pi6ps1m7g5n4b7sn4n2olqfr8u98?imageView2/2/w/800/q/80/format/webp", caption: "Ramie cardigan set — Baoxiang print" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31v5piulok00g5n4b7sn4n2olhc4epv8?imageView2/2/w/800/q/80/format/webp", caption: "Full outfit — bat sleeve drape" },
+      { url: "https://mall-i1.xhscdn.com/b/fb8ec979-46f0-4f34-a534-3bd9733309cd?imageView2/2/w/800/q/80/format/webp", caption: "Print detail — Tang dynasty motif" },
+      { url: "https://mall-i1.xhscdn.com/b/20ba53ee-ea86-4cc0-9e3a-cf82d6bec894?imageView2/2/w/800/q/80/format/webp", caption: "Fabric texture and ramie weave" }
     ],
     detailText: "Material: 100% pure ramie (苎麻)\nPrint: Baoxiang flower (宝相花)\nSilhouette: Bat sleeve open cardigan + pants\nFit: Universal (80–140 jin / 40–70kg)\nSeason: Summer 2026\nCare: Hand wash, hang dry\nShips from: Jiaxing, Zhejiang · Free shipping",
     hotReview: "Wore this all summer — the only thing that kept me comfortable in the heat AND looked put-together.",
@@ -2921,20 +2921,20 @@ const products = [
     originalPrice: "$374",
     sold: "1,825+ sold",
     shop: "D to the d",
-    shopAvatar: "imgs/fa224b4b7a32.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/65fed95eff49d100012f76ad.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "✨",
     likes: "31k",
     grad: "linear-gradient(135deg,#c4c0b8,#8a8880)",
     emoji: "✨",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320j9ofj26o0ftndlfk.webp", "imgs/104004dg320kc73mamo0a8babco.webp", "imgs/142e727b8d2f.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j9ofj26o0ftndlfk", "https://xhs-doc.xhscdn.com/104004dg320kc73mamo0a8babco", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031vtqpipl54005n1tgqpht8l5mmoo5v8?imageView2/2/w/3000/q/80/format/webp"],
     story: "D to the d mixes luxury fibers in unexpected proportions. This summer knit pairs 97% silk (with 2% spangle + 1% anti-static) against super-fine merino-linen yarn. Subtle shimmer, extraordinary texture.",
     detailImages: [
-      { url: "imgs/ef86648f855a.webp", caption: "Silk-wool-linen knit top — styling" },
-      { url: "imgs/6c7e1472fa90.webp", caption: "Model wearing white knit top" },
-      { url: "imgs/e9020db353c4.webp", caption: "Fabric shimmer detail — silk spangle" },
-      { url: "imgs/ebec9a11b989.webp", caption: "Outfit coordination" },
-      { url: "imgs/22c83faf3dad.webp", caption: "Patchwork texture close-up" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no320e6d9at5e0g5n1tgqpht8l5pds4td0?imageView2/2/w/800/q/80/format/webp", caption: "Silk-wool-linen knit top — styling" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031vtqpj0148005n1tgqpht8l5pkhu1rg?imageView2/2/w/800/q/80/format/webp", caption: "Model wearing white knit top" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031vtqpij0is005n1tgqpht8l5naonseo?imageView2/2/w/800/q/80/format/webp", caption: "Fabric shimmer detail — silk spangle" },
+      { url: "https://mall-i1.xhscdn.com/b/2aa5cb2b-456d-463f-9373-e3e4ae16373b?imageView2/2/w/800/q/80/format/webp", caption: "Outfit coordination" },
+      { url: "https://mall-i1.xhscdn.com/b/c6dade3c-a553-4e01-a64c-4e8517106134?imageView2/2/w/800/q/80/format/webp", caption: "Patchwork texture close-up" }
     ],
     detailText: "Yarn 1: 97% mulberry silk + 2% spangle + 1% anti-static\nYarn 2: 55% super-fine merino + 45% linen\nSilhouette: Cropped short-sleeve\nSeason: Summer 2026\nCare: Hand wash cold\nShips from: Jiaxing, Zhejiang · Free shipping",
     hotReview: "Photographs badly and looks incredible in person. The shimmer is subtle but magnetic.",
@@ -2974,9 +2974,14 @@ const products = [
     grad: "linear-gradient(135deg,#d4c0a8,#a88060)",
     emoji: "🌸",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320iftundli0dlgh050.webp", "imgs/104004dg320ifu2nq5i03ipn8hg.webp", "imgs/104004dg320ifu8e55c04kg0no8.webp", "imgs/104004dg320ifvbrrlc0c49t7gc.webp"],
-    story: "印花国风小众休闲男士短袖衬衫设计感宽松抗皱衬衣。CHICERRO updates traditional Chinese textile motifs for modern resort wear — wide silhouettes, wrinkle-resistant, the rare men's shirt that photographs as well as it wears.",
-    detailText: "印花国风小众休闲男士短袖衬衫设计感宽松抗皱衬衣\nMaterial: Linen blend (抗皱)\nPrint: CHICERRO botanical / New-Chinese motifs\nFit: Loose resort style (宽松)\nSeason: Spring/Summer\nCare: Machine wash gentle\n\n<img src='imgs/104004dg320ifud9nlk03mfg9mk.webp' style='width:100%;border-radius:8px;margin:8px 0'>\n<img src='imgs/104004dg320ifufvv6o04f81dc8.webp' style='width:100%;border-radius:8px;margin:8px 0'>\n<img src='imgs/104004dg320ifuhtu5k023fi6ec.webp' style='width:100%;border-radius:8px;margin:8px 0'>",
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320iftundli0dlgh050", "https://xhs-doc.xhscdn.com/104004dg320ifu2nq5i03ipn8hg", "https://xhs-doc.xhscdn.com/104004dg320ifu8e55c04kg0no8", "https://xhs-doc.xhscdn.com/104004dg320ifvbrrlc0c49t7gc"],
+    story: "CHICERRO updates traditional Chinese textile motifs for modern resort wear — wide silhouettes, wrinkle-resistant, the rare men's shirt that photographs as well as it wears.",
+    detailImages: [
+      { url: "https://xhs-doc.xhscdn.com/104004dg320ifud9nlk03mfg9mk", caption: "Botanical print — full view" },
+      { url: "https://xhs-doc.xhscdn.com/104004dg320ifufvv6o04f81dc8", caption: "Resort fit — loose silhouette" },
+      { url: "https://xhs-doc.xhscdn.com/104004dg320ifuhtu5k023fi6ec", caption: "Print detail — New-Chinese motifs" },
+    ],
+    detailText: "Material: Linen blend (wrinkle-resistant)\nPrint: CHICERRO botanical / New-Chinese motifs\nFit: Loose resort style\nSeason: Spring/Summer\nCare: Machine wash gentle",
     hotReview: "So many compliments I bought it in two colorways.",
     tags: [
       {
@@ -3009,19 +3014,19 @@ const products = [
     originalPrice: "$237",
     sold: "3,100+ sold",
     shop: "CORAZON DEL ALMA",
-    shopAvatar: "imgs/00a5d4de59b5.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/659b85c8e68ffc60f830aa01.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "👖",
     likes: "48k",
     grad: "linear-gradient(135deg,#d4ccc0,#8a8478)",
     emoji: "👖",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320j9tbejlc07ao4ius.webp", "imgs/c6600ae2127f.webp", "imgs/5fccfe800866.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j9tbejlc07ao4ius", "https://mall-i1.xhscdn.com/material_space/9fda630d-4e7f-469b-b0d4-7a16ac60c7f3?imageView2/2/w/800/q/80/format/webp", "https://mall-i1.xhscdn.com/material_space/38a9e3b3-f51e-4b1e-a2d0-20a25cd16028?imageView2/2/w/1000/q/80/format/webp"],
     story: "CORAZON DEL ALMA has cracked the code on linen trousers that look intentional. 94% ultra-fine linen color-woven with yellow, white, and black threads for a natural bamboo-node texture. 570,000+ sold.",
     detailImages: [
-      { url: "imgs/ee9b2909fa11.webp", caption: "Linen trousers — buckwheat grey" },
-      { url: "imgs/c6600ae2127f.webp", caption: "High waist silhouette" },
-      { url: "imgs/eac14a2cf046.webp", caption: "Bamboo-node color-woven texture" },
-      { url: "imgs/49d7e974cea1.webp", caption: "Full length — straight leg styling" }
+      { url: "https://mall-i1.xhscdn.com/material_space/4fbcef1b-9393-4bd6-9478-83b9371c62da?imageView2/2/w/800/q/80/format/webp", caption: "Linen trousers — buckwheat grey" },
+      { url: "https://mall-i1.xhscdn.com/material_space/9fda630d-4e7f-469b-b0d4-7a16ac60c7f3?imageView2/2/w/800/q/80/format/webp", caption: "High waist silhouette" },
+      { url: "https://mall-i1.xhscdn.com/material_space/38a9e3b3-f51e-4b1e-a2d0-20a25cd16028?imageView2/2/w/800/q/80/format/webp", caption: "Bamboo-node color-woven texture" },
+      { url: "https://mall-i1.xhscdn.com/material_space/73338326-39ad-4962-8f11-a774a42870cc?imageView2/2/w/800/q/80/format/webp", caption: "Full length — straight leg styling" }
     ],
     detailText: "Material: 94% ultra-fine linen + 6% mixed\nWeave: Exclusive color-woven bamboo-node texture\nColor: Buckwheat grey (荞麦灰)\nSilhouette: High-waist straight-leg\nWaist: Elastic drawstring, front pockets\nFit: S–XL (40–70kg)\nCare: Machine wash, hang dry\nShips from: Ningbo, Zhejiang · Free shipping",
     hotReview: "I wear these 5 days a week. They move like a skirt but are comfortable to sit in.",
@@ -3056,19 +3061,19 @@ const products = [
     originalPrice: "$195",
     sold: "430+ sold",
     shop: "Che Nan · 彻难",
-    shopAvatar: "imgs/211110f33e05.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/67fa3a91178e810001aa0938.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "💎",
     likes: "14k",
     grad: "linear-gradient(135deg,#4A7C59,#2a4a38)",
     emoji: "💎",
     imgClass: "",
-    imgs: ["imgs/104004dg320j9tjnu5k01s493f0.webp", "imgs/b6018dd2e03d.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j9tjnu5k01s493f0", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031val30s4hm004a017lq6hvlo34unuj8?imageView2/2/w/1280/q/80/format/webp"],
     story: "Hetian jade (和田玉) is the most prized of all Chinese jades. Qinglin nephrite: ice-clear with emerald green cat's eye effect. Paired with 18K gold zircon setting.",
     detailImages: [
-      { url: "imgs/ab631dac2ddd.webp", caption: "Hetian jade ring — emerald cat's eye" },
-      { url: "imgs/ba05f63aae45.webp", caption: "Ring on hand — styling reference" },
-      { url: "imgs/2f15fa6d4644.webp", caption: "18K gold zircon setting detail" },
-      { url: "imgs/195c39578caf.webp", caption: "Adjustable ring sizing" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31val2un73m0g4a017lq6hvlov5md188?imageView2/2/w/800/q/80/format/webp", caption: "Hetian jade ring — emerald cat's eye" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031val30s4hm004a017lq6hvlo34unuj8?imageView2/2/w/800/q/80/format/webp", caption: "Ring on hand — styling reference" },
+      { url: "https://mall-i1.xhscdn.com/b/6e3ecdf7-bd62-415f-aae5-4d7b3e64728c?imageView2/2/w/800/q/80/format/webp", caption: "18K gold zircon setting detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031ru80affi6004a017lq6hvloopged48?imageView2/2/w/800/q/80/format/webp", caption: "Adjustable ring sizing" }
     ],
     detailText: "Stone: Hetian nephrite Qinglin (卡8碧玉冰阳绿)\nCut: Cat's eye single bead\nSetting: 18K gold with zircon accents\nSize: Adjustable ring size 10–17\nCare: Avoid chemicals; store in cloth pouch\nShips from: Wuhan, Hubei · Free shipping",
     hotReview: "The green in person is more intense than the photos. I've been wearing it every day for 2 months.",
@@ -3103,19 +3108,19 @@ const products = [
     originalPrice: "$125",
     sold: "6,800+ sold",
     shop: "DELTA",
-    shopAvatar: "imgs/ef353f8482ea.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo314o7t5h600005otsnm29gq669lpsms8?imageView2/2/w/120/format/jpg",
     shopEmoji: "📿",
     likes: "19k",
     grad: "linear-gradient(135deg,#f0ece0,#c4bcac)",
     emoji: "📿",
     imgClass: "",
-    imgs: ["imgs/104004dg320j9u4kjmo0brj4lt0.webp", "imgs/32f221a576e9.webp", "imgs/9eb72ad64259.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j9u4kjmo0brj4lt0", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31v3vd8ajis0g5otsnm29gq6691uh0so?imageView2/2/w/1800/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31v3vd8a31m0g5otsnm29gq66u8ap1eg?imageView2/2/w/1800/q/80/format/webp"],
     story: "DELTA uses genuine Austrian-imported crystal to create pearl necklaces at a fraction of the price. The Starry Sky chain — fine silver links studded with micro crystals — gives distinctive shimmer against the central pearl.",
     detailImages: [
-      { url: "imgs/7bf2a3293400.webp", caption: "Austrian crystal pearl necklace — Duchess style" },
-      { url: "imgs/79df0d6d00b3.webp", caption: "Starry sky chain detail" },
-      { url: "imgs/62e9df3f9e01.webp", caption: "Necklace styling — layered look" },
-      { url: "imgs/7cdc5455404e.webp", caption: "Crystal and pearl close-up" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31v3vd8ajis0g5otsnm29gq6691uh0so?imageView2/2/w/800/q/80/format/webp", caption: "Austrian crystal pearl necklace — Duchess style" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31v3vd8a31m0g5otsnm29gq66u8ap1eg?imageView2/2/w/800/q/80/format/webp", caption: "Starry sky chain detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o030obn7td1ie005otsnm29gq66pu8r7no?imageView2/2/w/800/q/80/format/webp", caption: "Necklace styling — layered look" },
+      { url: "https://mall-i1.xhscdn.com/b/3f98d89d-cd72-4442-a7b7-23754b5f77ef?imageView2/2/w/800/q/80/format/webp", caption: "Crystal and pearl close-up" }
     ],
     detailText: "Material: 925 silver · Austrian crystal pearls · CZ\nStyle: Starry sky chain Duchess style\nLength: 45cm adjustable\nCare: Wipe clean; store in pouch\nShips from: Hangzhou, Zhejiang · Free shipping",
     hotReview: "Three people at the same event told me it looked like something from a Parisian jeweler.",
@@ -3150,19 +3155,19 @@ const products = [
     originalPrice: "$364",
     sold: "780+ sold",
     shop: "Mountgleam · 山晓",
-    shopAvatar: "imgs/adb2038db394.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/65be372932e67b8eba6f9cd1.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🔮",
     likes: "11k",
     grad: "linear-gradient(135deg,#c8d0c0,#8a9880)",
     emoji: "🔮",
     imgClass: "",
-    imgs: ["imgs/104004dg320ja0d43le09he90ik.webp", "imgs/54de7d34d7b2.webp", "imgs/05bde34ea564.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320ja0d43le09he90ik", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31mhdb2qhl20g5p2a8e0kmo1vgbo5ero?imageView2/2/w/1280/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31mhdb6d94u805p2a8e0kmo1vpqb6dj8?imageView2/2/w/1280/q/80/format/webp"],
     story: "Shanxiao (山晓) handcrafts jade jewelry with natural stones — ice-clear Hetian jade beads with 18K gold fittings. Each piece is made by hand; slight color variation is the beauty of natural stone.",
     detailImages: [
-      { url: "imgs/c3931cbbed5d.webp", caption: "Hetian jade beaded bracelet" },
-      { url: "imgs/23f6d0be8182.webp", caption: "Ice-clear jade beads detail" },
-      { url: "imgs/cfb6cee23aee.webp", caption: "18K gold fittings close-up" },
-      { url: "imgs/8cc15b9618b8.webp", caption: "Wrist styling — natural stone beauty" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31mhdb0pvku0g5p2a8e0kmo1vqi2nbbg?imageView2/2/w/800/q/80/format/webp", caption: "Hetian jade beaded bracelet" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31mhdb2qhl20g5p2a8e0kmo1vgbo5ero?imageView2/2/w/800/q/80/format/webp", caption: "Ice-clear jade beads detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31mhdb6d94u805p2a8e0kmo1vpqb6dj8?imageView2/2/w/800/q/80/format/webp", caption: "18K gold fittings close-up" },
+      { url: "https://mall-i1.xhscdn.com/b/4aca555a-14b5-4ef1-a47d-cae2066f4539?imageView2/2/w/800/q/80/format/webp", caption: "Wrist styling — natural stone beauty" }
     ],
     detailText: "Stone: Natural Hetian nephrite (冰底晴水和田玉) ~6mm\nFittings: 18K gold\nSizes: 16.5cm / 17.5cm / 18.5cm (select for wrist size)\nHandmade: Slight variation is natural and expected\nCare: Store separately, avoid chemicals\nShips from: Ningbo, Zhejiang · Free shipping",
     hotReview: "I've been wearing it daily for 3 months and it gets compliments every single week.",
@@ -3197,19 +3202,19 @@ const products = [
     originalPrice: "$269",
     sold: "920+ sold",
     shop: "Qi Mei Ren · 琪美人",
-    shopAvatar: "imgs/edd1913aaaeb.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ar02152720042ma8fpjro9jddlnog8?imageView2/2/w/120/format/jpg",
     shopEmoji: "👜",
     likes: "8.9k",
     grad: "linear-gradient(135deg,#6b1a6b,#9b4a9b)",
     emoji: "👜",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320jamlqv5e78bsq0fc.webp", "imgs/62b93621031f.webp", "imgs/1abe4ce3ebcb.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jamlqv5e78bsq0fc", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031b0bqmsdmm0042ma8fpjro9jii6v16o?imageView2/2/w/2316/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0ao318d9h79f440042ma8fpjro9jj73jhd0?imageView2/2/w/3024/q/80/format/webp"],
     story: "Song brocade (宋锦) is one of China's three great historical silk weaving traditions — woven in Suzhou for over 1,000 years. This bucket bag pairs authentic Song brocade silk exterior with genuine leather handle and interior lining.",
     detailImages: [
-      { url: "imgs/a286a7d16cf5.webp", caption: "Song brocade bucket bag — heritage craft" },
-      { url: "imgs/d397b2c2dcd8.webp", caption: "Silk brocade pattern detail" },
-      { url: "imgs/4602859996a2.webp", caption: "Leather handle and interior" },
-      { url: "imgs/62b620128467.webp", caption: "Bag styling — daily essentials" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031b0bqmsdmm0042ma8fpjro9jii6v16o?imageView2/2/w/800/q/80/format/webp", caption: "Song brocade bucket bag — heritage craft" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0ao318d9h79f440042ma8fpjro9jj73jhd0?imageView2/2/w/800/q/80/format/webp", caption: "Silk brocade pattern detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031jddovou2g0042ma8fpjro9jdmu3ag0?imageView2/2/w/800/q/80/format/webp", caption: "Leather handle and interior" },
+      { url: "https://mall-i1.xhscdn.com/b/4e527bf5-f282-4b3a-8518-740e3b459064?imageView2/2/w/800/q/80/format/webp", caption: "Bag styling — daily essentials" }
     ],
     detailText: "Exterior: Song brocade silk (宋锦) · Non-heritage design\nMaterial: Silk + genuine leather + cotton lining\nSize: Small water bucket form\nClosure: Zipper\nCompatibility: Daily essentials\nShips from: Guangzhou · Free shipping",
     hotReview: "This bag gets more attention than anything I own. The Song brocade pattern is jaw-dropping in person.",
@@ -3244,19 +3249,19 @@ const products = [
     originalPrice: "$154",
     sold: "141,000+ sold",
     shop: "ECODAY",
-    shopAvatar: "imgs/7a8f51946f97.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ld07o66lo005p79njrgabro7jmdg2g?imageView2/2/w/120/format/jpg",
     shopEmoji: "👜",
     likes: "28k",
     grad: "linear-gradient(135deg,#f5f0e8,#d4b896)",
     emoji: "👜",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320jana5g5i02ntfu7o.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jana5g5i02ntfu7o"],
     story: "ECODAY's crescent-silhouette crochet woven tote became one of the most viral bag designs of 2024-2025. Hand-woven in champagne ivory, it walks the line between beach bag and urban commuter tote — light, structured, and endlessly photogenic. 141,000+ sold.",
     detailImages: [
-      { url: "imgs/b20af3f8e4eb.webp", caption: "Crochet woven tote — champagne color" },
-      { url: "imgs/1fb1b150536a.webp", caption: "Woven texture detail" },
-      { url: "imgs/ac0ddbd0c329.webp", caption: "Large capacity — daily commute" },
-      { url: "imgs/69cbdfdb4f18.webp", caption: "Interior lining and pocket" }
+      { url: "https://mall-i1.xhscdn.com/arkgoods/104100ao31bjhvg6g0s06c3goivh00000000000bll6u1q?imageView2/2/w/800/q/80/format/webp", caption: "Crochet woven tote — champagne color" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/104103ng31kjjotf3320mc3goivh00000000000etc1aq2?imageView2/2/w/800/q/80/format/webp", caption: "Woven texture detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/104103ng31ktpgq3mj20mc3goivh00000000000e75cunk?imageView2/2/w/800/q/80/format/webp", caption: "Large capacity — daily commute" },
+      { url: "https://mall-i1.xhscdn.com/b/26b2c9ad-f196-4f2e-a7a0-c79f158f0812?imageView2/2/w/800/q/80/format/webp", caption: "Interior lining and pocket" }
     ],
     detailText: "Material: PU + woven crochet exterior\nStyle: Tote / single-shoulder\nClosure: Magnetic snap\nSize: Large (daily essentials + A4)\nColor: Champagne / Red / Multiple colorways\nInner: Fabric lining with interior pocket\nOrigin: Guangzhou, Guangdong\nShips from: Guangzhou · Free shipping",
     hotReview: "I get stopped on the street asking where this bag is from every single week. The woven texture is striking and it holds everything.",
@@ -3285,19 +3290,19 @@ const products = [
     originalPrice: "$110",
     sold: "1,340+ sold",
     shop: "Lost · 三川野生家",
-    shopAvatar: "imgs/d1855f5d3318.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/413ec0b5-4570-310e-a273-624957f67210?imageView2/2/w/120/format/jpg",
     shopEmoji: "🎒",
     likes: "7.2k",
     grad: "linear-gradient(135deg,#1B3A6B,#4a6b9b)",
     emoji: "🎒",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320ja2bb9lc00jbg2o0.webp", "imgs/87e6349bc988.webp", "imgs/542c1896dae1.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320ja2bb9lc00jbg2o0", "https://mall-i1.xhscdn.com/arkgoods/104103ng31kgl25ai2o0mdbf77rh00000000000cgm5sh2?imageView2/2/w/1280/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/104103ng31g3ao6c5g20mdbf77rh00000000000bk8svas?imageView2/2/w/1280/q/80/format/webp"],
     story: "Three Creeks Studio (三川野生家) works with artisans who use traditional batik (蜡染) resist-dyeing on aged linen fabric. Each bag is one-of-a-kind. The old batik fabric is sourced from vintage cloth — no two bags are the same.",
     detailImages: [
-      { url: "imgs/ae56a87f6d89.webp", caption: "Product detail" },
-      { url: "imgs/87e6349bc988.webp", caption: "Lifestyle shot" },
-      { url: "imgs/542c1896dae1.webp", caption: "Craft detail" },
-      { url: "imgs/0cca54a4794a.webp", caption: "Batik pattern close-up" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/104100ao31fkukuvv0006dbf77rh00000000000bc8a880?imageView2/2/w/1920/q/80/format/webp", caption: "Product detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/104103ng31kgl25ai2o0mdbf77rh00000000000cgm5sh2?imageView2/2/w/1280/q/80/format/webp", caption: "Lifestyle shot" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/104103ng31g3ao6c5g20mdbf77rh00000000000bk8svas?imageView2/2/w/1280/q/80/format/webp", caption: "Craft detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/104103ng31gov19dejo0mdbf77rh000000000008rn8f3e?imageView2/2/w/1280/q/80/format/webp", caption: "Batik pattern close-up" },
     ],
     detailText: "Material: 100% cotton batik canvas (古布蜡染)\nStyle: Large tote, single shoulder, open/zip closure\nSize: 35cm × 31cm tote (Ye)\nProduction: Non-heritage batik, hand-waxed\nCare: Hand wash cold\nShips from: Zhengzhou, Henan · Free shipping",
     hotReview: "People stop me on the street to ask about this bag. The indigo and white pattern is absolutely striking.",
@@ -3332,19 +3337,19 @@ const products = [
     originalPrice: "$293",
     sold: "18,000+ sold",
     shop: "Leebart · 鞋先生",
-    shopAvatar: "imgs/747df0aaa9d4.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ckl832e10605nn25aigbj6dchm5ul0?imageView2/2/w/120/format/jpg",
     shopEmoji: "👟",
     likes: "28k",
     grad: "linear-gradient(135deg,#f0ece0,#c4bcac)",
     emoji: "👟",
     imgClass: "",
-    imgs: ["imgs/104004dg320ja2rpglc080t4neo.webp", "imgs/99bcc5b39d7e.webp", "imgs/a86bb12f5b41.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320ja2rpglc080t4neo", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031g8m05fph8005nn25aigbj6d6nq5km8?imageView2/2/w/1280/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031g60rvcth8005nn25aigbj6dreqvnu0?imageView2/2/w/1280/q/80/format/webp"],
     story: "Leebart (鞋先生) builds tabi split-toe shoes with Italian leather sole — the same material used in top-tier European footwear. The tabi design traces back to traditional Japanese footwear adapted for contemporary fashion.",
     detailImages: [
-      { url: "imgs/97681539c316.webp", caption: "Product detail" },
-      { url: "imgs/99bcc5b39d7e.webp", caption: "Tabi split-toe close-up" },
-      { url: "imgs/a86bb12f5b41.webp", caption: "Italian leather sole" },
-      { url: "imgs/6bf24cb190eb.webp", caption: "Lifestyle shot" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31g60ronp1c0g5nn25aigbj6dbltt38o?imageView2/2/w/1280/q/80/format/webp", caption: "Product detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031g8m05fph8005nn25aigbj6d6nq5km8?imageView2/2/w/1280/q/80/format/webp", caption: "Tabi split-toe close-up" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031g60rvcth8005nn25aigbj6dreqvnu0?imageView2/2/w/1280/q/80/format/webp", caption: "Italian leather sole" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031g60rtpr1e005nn25aigbj6df3pv5r8?imageView2/2/w/1280/q/80/format/webp", caption: "Lifestyle shot" },
     ],
     detailText: "Upper: Full-grain leather\nSole: Italian leather sole\nHeel: 3.5cm\nFeature: Tabi split-toe design\nProduction: 15 business days (handcrafted)\nCare: Leather conditioner monthly\nShips from: Foshan, Guangdong · Free shipping",
     hotReview: "I've paid $600 for shoes less comfortable and less well-made than these. The Italian leather sole is the real deal.",
@@ -3379,19 +3384,19 @@ const products = [
     originalPrice: "$114",
     sold: "8,169+ sold",
     shop: "OrangeS · 橙子",
-    shopAvatar: "imgs/dd0da539bcf3.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/5fe1c7d1122a9db02513973b.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🧣",
     likes: "34k",
     grad: "linear-gradient(135deg,#f5f0e8,#c4bcac)",
     emoji: "🧣",
     imgClass: "",
-    imgs: ["imgs/104004dg320j9s3kl6o08nt283o.webp", "imgs/d7a2f63a6623.webp", "imgs/90f3b1892e6f.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j9s3kl6o08nt283o", "https://mall-i1.xhscdn.com/material_space/f1421cb3-00b1-43be-b4bc-36f43533f69d?imageView2/2/w/750/q/80/format/webp", "https://mall-i1.xhscdn.com/material_space/58ae4d8e-6fec-4a78-a0fb-944e709b9e16?imageView2/2/w/750/q/80/format/webp"],
     story: "OrangeS (橙子) makes luxury silk accessories at accessible prices. Their 100% mulberry silk double-crepe scarves have been worn on virtually every Chinese fashion influencer on Xiaohongshu. The geometric pattern, the silk weight, the drape — old money for real.",
     detailImages: [
-      { url: "imgs/c622bf7dea18.webp", caption: "Product detail" },
-      { url: "imgs/d7a2f63a6623.webp", caption: "Silk drape lifestyle" },
-      { url: "imgs/90f3b1892e6f.webp", caption: "Geometric print close-up" },
-      { url: "imgs/7f54e815f7a0.webp", caption: "Styling shot" },
+      { url: "https://mall-i1.xhscdn.com/material_space/b7d820e8-92ef-4ad5-ac8c-a1a3e86d903e?imageView2/2/w/750/q/80/format/webp", caption: "Product detail" },
+      { url: "https://mall-i1.xhscdn.com/material_space/f1421cb3-00b1-43be-b4bc-36f43533f69d?imageView2/2/w/750/q/80/format/webp", caption: "Silk drape lifestyle" },
+      { url: "https://mall-i1.xhscdn.com/material_space/58ae4d8e-6fec-4a78-a0fb-944e709b9e16?imageView2/2/w/750/q/80/format/webp", caption: "Geometric print close-up" },
+      { url: "https://mall-i1.xhscdn.com/material_space/10902e40-c912-4839-ae3f-db4c820ce45a?imageView2/2/w/800/q/80/format/webp", caption: "Styling shot" },
     ],
     detailText: "Material: 100% mulberry silk double-crepe\nSize: 64cm × 64cm square\nWeight: 14 momme (medium drape)\nStyle: Old money geometric print\nCare: Hand wash cold or dry clean\nShips from: Hangzhou, Zhejiang · Free shipping",
     hotReview: "I've bought French silk scarves at 5× the price. This one is better.",
@@ -3426,19 +3431,19 @@ const products = [
     originalPrice: "$414",
     sold: "339+ sold",
     shop: "APRIL",
-    shopAvatar: "imgs/20d54c6457b0.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/seller_68bbe05d67c0b3000139aae7?imageView2/2/w/120/format/jpg",
     shopEmoji: "🕶",
     likes: "12k",
     grad: "linear-gradient(135deg,#1a1a2a,#4a4a6a)",
     emoji: "🕶",
     imgClass: "short-contain",
-    imgs: ["imgs/104004dg320j9sms5le0dkqgtqc.webp", "imgs/fd2235ad5e97.webp", "imgs/2e1b0ab2ff83.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320j9sms5le0dkqgtqc", "https://mall-i1.xhscdn.com/arkgoods/1040g0o03202i6adrl6005n7il0j427llbas27ag?imageView2/2/w/800/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031vkbedank8005n7il0j427ll4thmqig?imageView2/2/w/3334/q/80/format/webp"],
     story: "APRIL creates eyewear rooted in Chinese cosmological symbolism. The Jingzhe (惊蛰, 'Awakening of Insects') solar term series features frame details inspired by bamboo joints and the North Star (北斗七星 constellation). Ultra-light titanium frame. 3-period interest-free installment available.",
     detailImages: [
-      { url: "imgs/a8ec2790946c.webp", caption: "Product detail" },
-      { url: "imgs/fd2235ad5e97.webp", caption: "Frame design close-up" },
-      { url: "imgs/2e1b0ab2ff83.webp", caption: "Lifestyle shot" },
-      { url: "imgs/1820253580f9.webp", caption: "North Star bamboo detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no3202i75mnk80g5n7il0j427llfetpll0?imageView2/2/w/800/q/80/format/webp", caption: "Product detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o03202i6adrl6005n7il0j427llbas27ag?imageView2/2/w/800/q/80/format/webp", caption: "Frame design close-up" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031vkbedank8005n7il0j427ll4thmqig?imageView2/2/w/3334/q/80/format/webp", caption: "Lifestyle shot" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031vkbeda2kc0g5n7il0j427ll0tu2t98?imageView2/2/w/3335/q/80/format/webp", caption: "North Star bamboo detail" },
     ],
     detailText: "Brand: APRIL\nSeries: Jingzhe (惊蛰) Solar Term\nFrame: Ultra-light titanium (超轻钛架)\nElements: Bamboo joint + North Star (北斗七星)\nLens: Nylon anti-UV\nFunction: UV-A protection\nShips from: Shenzhen, Guangdong · Free shipping",
     hotReview: "The lightest sunglasses I've ever worn — I forget they're on. The craftsmanship is extraordinary.",
@@ -3473,19 +3478,19 @@ const products = [
     originalPrice: "$215",
     sold: "1,100+ sold",
     shop: "Hai Ye · 海也",
-    shopAvatar: "imgs/5debde433549.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/seller_690d52e23b3c6e0001ef05a0?imageView2/2/w/120/format/jpg",
     shopEmoji: "🌊",
     likes: "8.4k",
     grad: "linear-gradient(135deg,#1B3A6B,#2a6b6b)",
     emoji: "🌊",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320jao48tmo07ol2vs0.webp", "imgs/352256526df2.webp", "imgs/6957dabdd86a.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jao48tmo07ol2vs0", "https://mall-i1.xhscdn.com/arkgoods/104103ng31kjjotf3320mc3goivh00000000000etc1aq2?imageView2/2/w/1594/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/104103ng31ktpgq3mj20mc3goivh00000000000e75cunk?imageView2/2/w/3000/q/80/format/webp"],
     story: "Hai Ye (海也) hand-paints miniature ocean wave scenes in sculptural gypsum frames — each piece is individually painted and no two are identical. The surface has a subtle reflective glaze that catches warm light beautifully. Comes ready to stand on a shelf or hang on a wall.",
     detailImages: [
-      { url: "imgs/54951922c327.webp", caption: "Product detail" },
-      { url: "imgs/352256526df2.webp", caption: "Wave texture close-up" },
-      { url: "imgs/6957dabdd86a.webp", caption: "Lifestyle shelf display" },
-      { url: "imgs/a6172c5b8d6a.webp", caption: "Glaze finish detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/104100ao31bjhvg6g0s06c3goivh00000000000bll6u1q?imageView2/2/w/2901/q/80/format/webp", caption: "Product detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/104103ng31kjjotf3320mc3goivh00000000000etc1aq2?imageView2/2/w/1594/q/80/format/webp", caption: "Wave texture close-up" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/104103ng31ktpgq3mj20mc3goivh00000000000e75cunk?imageView2/2/w/3000/q/80/format/webp", caption: "Lifestyle shelf display" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/104100ao31bji1dl6h006c3goivh00000000000fsjd7s4?imageView2/2/w/3000/q/80/format/webp", caption: "Glaze finish detail" },
     ],
     detailText: "Dimensions: 20cm (frame: 21.6cm)\nFrame: White ash wood frame\nWave material: Gypsum, hand-painted\nWeight: ~1.3kg\nFinish: Glossy reflective glaze\nNote: Display reflection from warm light is natural, not gold particles\nShips from: Jinan, Shandong · Free shipping",
     hotReview: "The light plays across this piece differently throughout the day. It's meditative to look at.",
@@ -3520,19 +3525,19 @@ const products = [
     originalPrice: "$380",
     sold: "260+ sold",
     shop: "None · 無一物",
-    shopAvatar: "imgs/e4a85f24403f.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30odfl1avi6005o0ne5ug8tss9gqolt0?imageView2/2/w/120/format/jpg",
     shopEmoji: "🖼",
     likes: "3.1k",
     grad: "linear-gradient(135deg,#c4a882,#8B6347)",
     emoji: "🖼",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320jaoffb5k0840hvb0.webp", "imgs/615cf5fbcdaa.webp", "imgs/dafbc022e101.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jaoffb5k0840hvb0", "https://mall-i1.xhscdn.com/arkgoods/1040g0o0319u60a67mq005o0ne5ug8tssas81cdo?imageView2/2/w/800/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31fp0mgbege0g5o0ne5ug8tss39k4t4g?imageView2/2/w/2000/q/80/format/webp"],
     story: "Wuyi Wu (無一物) presents Suzhou embroidery — one of China's four great embroidery traditions — in contemporary French-style gallery framing. The Pipa Bird pattern references Song dynasty court painting aesthetics, modernized with soft French palette.",
     detailImages: [
-      { url: "imgs/ae2039232b24.webp", caption: "Product detail" },
-      { url: "imgs/615cf5fbcdaa.webp", caption: "Embroidery stitch detail" },
-      { url: "imgs/dafbc022e101.webp", caption: "Pipa bird motif close-up" },
-      { url: "imgs/2b1c0c9082b3.webp", caption: "Framed lifestyle display" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o0319u60a5i7i005o0ne5ug8tssv4gcdto?imageView2/2/w/800/q/80/format/webp", caption: "Product detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o0319u60a67mq005o0ne5ug8tssas81cdo?imageView2/2/w/800/q/80/format/webp", caption: "Embroidery stitch detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31fp0mgbege0g5o0ne5ug8tss39k4t4g?imageView2/2/w/2000/q/80/format/webp", caption: "Pipa bird motif close-up" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31pb8t7toi4105o0ne5ug8tss525ek88?imageView2/2/w/2000/q/80/format/webp", caption: "Framed lifestyle display" },
     ],
     detailText: "Style: Suzhou embroidery · French-Chinese mid-century\nSubject: Pipa bird (枇杷山鸟 — Song dynasty motif)\nDimensions: 40×40cm\nFrame: Solid wood\nCraft: Traditional Suzhou embroidery on silk\nShips from: Xiamen, Fujian · Free shipping",
     hotReview: "I study Chinese art history — this embroidery is technically impeccable. The framing choice is inspired.",
@@ -3567,17 +3572,17 @@ const products = [
     originalPrice: "$215",
     sold: "140+ sold",
     shop: "Pine Gallery · 松",
-    shopAvatar: "imgs/14981cbf7431.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31gdn0u2r3s005pgiorl1ohu27f2ahc0?imageView2/2/w/120/format/jpg",
     shopEmoji: "🖌",
     likes: "5.8k",
     grad: "linear-gradient(135deg,#c4b89a,#8a7558)",
     emoji: "🖌",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320jaov975i0dcgromo.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jaov975i0dcgromo"],
     story: "Pine Gallery (松) in Chengdu represents a new generation of Chinese painters who work in oil on canvas with a distinctly Chinese aesthetic — influenced by Song dynasty scroll painting but expressed in contemporary form. Each 'Shu Zhan' (舒展, 'unfurl') canvas is hand-painted and one-of-a-kind.",
     detailImages: [
-      { url: "imgs/41942b05c9a3.webp", caption: "Product detail" },
-      { url: "imgs/b94d0b482f8c.webp", caption: "Canvas texture close-up" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031oe4r3aaks005pgiorl1ohu2nr5m48g?imageView2/2/w/1280/q/80/format/webp", caption: "Product detail" },
+      { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31i01gc0lmq0g5pgiorl1ohu216t08sg?imageView2/2/w/1024/q/80/format/webp", caption: "Canvas texture close-up" },
     ],
     detailText: "Title: Shu Zhan (舒展 — Unfurl)\nSeries: Mid-century Chinese (中古风)\nDimensions: 50×50cm\nMedium: Oil on canvas\nProduction: Hand-painted · 15-day dispatch\nCertificate: Includes artist signature\nShips from: Chengdu, Sichuan · Free shipping",
     hotReview: "Bought this on a whim and it's become my favorite thing in my apartment. Original art at this price is a steal.",
@@ -3612,19 +3617,19 @@ const products = [
     originalPrice: "$103",
     sold: "2,600+ sold",
     shop: "Haha Playground · 哈哈游乐场文创",
-    shopAvatar: "imgs/9b3a6255ee11.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31egp60n0gm6g5ptnsdl1o7b6lohp2mo?imageView2/2/w/120/format/jpg",
     shopEmoji: "📓",
     likes: "7.2k",
     grad: "linear-gradient(135deg,#f5f0e8,#c4a882)",
     emoji: "📓",
     imgClass: "",
-    imgs: ["imgs/104004dg320jaritr5k0b4n1cjs.webp", "imgs/c75c583199ec.webp", "imgs/5a86c1dab841.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jaritr5k0b4n1cjs", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31f0banjoms0g5ptnsdl1o7b67v7osl0?imageView2/2/w/1125/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31epsp9ja5u0g5ptnsdl1o7b6giclf2g?imageView2/2/w/1500/q/80/format/webp"],
     story: "Haha Playground (哈哈游乐场) creates therapeutic journaling products that blend Chinese wellness philosophy with contemporary self-care practice. The Happiness Journal is structured for daily gratitude entries, mood tracking, and reflective writing. The embroidered edition comes in a collector's gift box.",
     detailImages: [
-              { url: "imgs/0361a556f680.webp", caption: "Product detail" },
-              { url: "imgs/c75c583199ec.webp", caption: "Lifestyle shot" },
-              { url: "imgs/5a86c1dab841.webp", caption: "Craft detail" },
-              { url: "imgs/a6e4d4615169.webp", caption: "Packaging detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031f09spnf6s005ptnsdl1o7b68sfi4lg?imageView2/2/w/1125/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31f0banjoms0g5ptnsdl1o7b67v7osl0?imageView2/2/w/1125/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31epsp9ja5u0g5ptnsdl1o7b6giclf2g?imageView2/2/w/1500/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31epsp9jp5o0g5ptnsdl1o7b6jakeavo?imageView2/2/w/1500/q/80/format/webp", caption: "Packaging detail" },
             ],
     detailText: "Type: Self-care / gratitude / healing journal\nEdition: Embroidered cover (刺绣款)\nPackaging: Collector's gift box\nContent: Daily prompts, gratitude pages, mood tracking\nSize: A5\nShips from: Hangzhou, Zhejiang",
     hotReview: "I've bought three. One for myself, one gifted, and one back-up because I couldn't bear to run out.",
@@ -3659,18 +3664,18 @@ const products = [
     originalPrice: "$71",
     sold: "3,900+ sold",
     shop: "VanillaMountain · 香草山",
-    shopAvatar: "imgs/eed5e0ef6edb.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31lm3glci4s005nifrlhg81dgs80rs2g?imageView2/2/w/120/format/jpg",
     shopEmoji: "🔖",
     likes: "4.3k",
     grad: "linear-gradient(135deg,#4A7C59,#2a4a38)",
     emoji: "🔖",
     imgClass: "",
-    imgs: ["imgs/104004dg320jatn2rlc048eoqp4.webp", "imgs/1d063b894f90.webp", "imgs/79858d8ff1b4.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jatn2rlc048eoqp4", "https://mall-i1.xhscdn.com/material_space/56b09a13-c7a7-4b67-9f8a-3bebe5a64c1c?imageView2/2/w/1200/q/80/format/webp", "https://mall-i1.xhscdn.com/material_space/df547bbb-fd74-4f63-8936-992b7fee3d1e?imageView2/2/w/1200/q/80/format/webp"],
     story: "Vanilla Mountain (香草山) creates hand-embroidered felt bookmarks that are simultaneously functional and collectible — each tiny animal character is embroidered by hand on wool felt. This is the bookmark people photograph and post about before they even use it.",
     detailImages: [
-              { url: "imgs/799e4cbe683e.webp", caption: "Product detail" },
-              { url: "imgs/1d063b894f90.webp", caption: "Lifestyle shot" },
-              { url: "imgs/79858d8ff1b4.webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/material_space/bdd6471a-9ecb-409b-b72a-09cba380d59b?imageView2/2/w/1200/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/material_space/56b09a13-c7a7-4b67-9f8a-3bebe5a64c1c?imageView2/2/w/1200/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/material_space/df547bbb-fd74-4f63-8936-992b7fee3d1e?imageView2/2/w/1200/q/80/format/webp", caption: "Craft detail" },
             ],
     detailText: "Material: Wool felt + embroidery thread\nDesign: Lamb (咩咩) — Moss Green edition\nDimensions: Standard bookmark size\nHandcraft: Hand-embroidered\nGift: Perfect for readers, students, collectors\nShips from: Langfang, Hebei",
     hotReview: "I bought this as a gift and immediately ordered one for myself. The craftsmanship on something this small is incredible.",
@@ -3705,19 +3710,19 @@ const products = [
     originalPrice: "$164",
     sold: "1,800+ sold",
     shop: "RPDCLaVie",
-    shopAvatar: "imgs/1953d226c6f9.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31plj3cvv4ue05oo0i8s4g7lj4tviifg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🗃",
     likes: "5.6k",
     grad: "linear-gradient(135deg,#b4c0d0,#8090a0)",
     emoji: "🗃",
     imgClass: "",
-    imgs: ["imgs/104004dg320jau42klk01lquc74.webp", "imgs/abbf8441c705.webp", "imgs/0285e3d978c2.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jau42klk01lquc74", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031mvdrvs84u005oo0i8s4g7ljdme4ea0?imageView2/2/w/1500/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031mrqfjvbku005oo0i8s4g7ljes71r5o?imageView2/2/w/1500/q/80/format/webp"],
     story: "RPDCLaVie makes jewelry storage that doubles as desktop art. The Mousse Cake box features multi-layer drawers in a tiered cake silhouette — large capacity for rings, bracelets, hair accessories, and small items, all beautifully organized. The Blueberry Brulee denim colorway sold out immediately on launch.",
     detailImages: [
-              { url: "imgs/286b15010c60.webp", caption: "Product detail" },
-              { url: "imgs/abbf8441c705.webp", caption: "Lifestyle shot" },
-              { url: "imgs/0285e3d978c2.webp", caption: "Craft detail" },
-              { url: "imgs/09e47c750043.webp", caption: "Color detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31u4tv5gf2u0g5oo0i8s4g7ljrg81dd8?imageView2/2/w/1100/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031mvdrvs84u005oo0i8s4g7ljdme4ea0?imageView2/2/w/1500/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031mrqfjvbku005oo0i8s4g7ljes71r5o?imageView2/2/w/1500/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031u4tv5i1hs005oo0i8s4g7lj81r521o?imageView2/2/w/1100/q/80/format/webp", caption: "Color detail" },
             ],
     detailText: "Style: Mousse Cake multi-layer drawer box\nColor: Blueberry Brulee Denim (蓝莓布蕾牛仔)\nCapacity: Multiple drawers for jewelry, accessories\nProduction: 15-day dispatch\nCare: Wipe clean with dry cloth\nShips from: Hangzhou, Zhejiang",
     hotReview: "My vanity table looks completely different. This is the organization solution I've been looking for.",
@@ -3752,19 +3757,19 @@ const products = [
     originalPrice: "$95",
     sold: "455,000+ sold",
     shop: "Rays · 潮玩",
-    shopAvatar: "imgs/2d281350daee.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3138veg79jk005n7m4do4mbksdisror8?imageView2/2/w/120/format/jpg",
     shopEmoji: "🌽",
     likes: "88k",
     grad: "linear-gradient(135deg,#f5d878,#c8a832)",
     emoji: "🌽",
     imgClass: "",
-    imgs: ["imgs/104004dg320jaugbqlk0pqbu3g8.webp", "imgs/29ff5bc9a7f1.webp", "imgs/c4c838b42d2e.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jaugbqlk0pqbu3g8", "https://mall-i1.xhscdn.com/arkgoods/104103ng31p8u4f3ijc76cvt4d7h00000000000fohm4ho?imageView2/2/w/1280/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/104103ng31p8u4f3ijc86cvt4d7h00000000000c73dsb4?imageView2/2/w/1280/q/80/format/webp"],
     story: "Rays Trendy Collectibles (Rays潮玩) created the Sweet Corn plush IP that exploded across Xiaohongshu in 2025. This tiny corn character — with its absurdist expression and miniature accessories — became the 'Labubu of the vegetable kingdom.' 455,000+ sold, and the accessories set makes it endlessly customizable.",
     detailImages: [
-              { url: "imgs/acc88f4bee20.webp", caption: "Product detail" },
-              { url: "imgs/29ff5bc9a7f1.webp", caption: "Lifestyle shot" },
-              { url: "imgs/c4c838b42d2e.webp", caption: "Craft detail" },
-              { url: "imgs/c811c5f6744b.webp", caption: "Collectible detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/104103ng31otcnuulhg56cvt4d7h00000000000e58v69e?imageView2/2/w/1280/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/104103ng31p8u4f3ijc76cvt4d7h00000000000fohm4ho?imageView2/2/w/1280/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/104103ng31p8u4f3ijc86cvt4d7h00000000000c73dsb4?imageView2/2/w/1280/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/104103ng31otcnuulhg4mcvt4d7h00000000000e1nhvcg?imageView2/2/w/2000/q/80/format/webp", caption: "Collectible detail" },
             ],
     detailText: "Character: Sweet Corn (甜玉米)\nDimensions: 11cm × 7cm × 15cm\nMaterial: Soft plush + resin accessories\nSet: Corn character + accessory set\nBlind box: No (specific character)\nCollectible: Multiple series available\nShips from: Wenzhou, Zhejiang",
     hotReview: "My daughter cried happy tears when this arrived. I'm 34 and I also cried.",
@@ -3799,19 +3804,19 @@ const products = [
     originalPrice: "$110",
     sold: "5,700+ sold",
     shop: "Qimengdao · 奇梦岛",
-    shopAvatar: "imgs/d120c6d6ccda.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/seller_6931595fb545a4000163558a?imageView2/2/w/120/format/jpg",
     shopEmoji: "🪆",
     likes: "15k",
     grad: "linear-gradient(135deg,#c4a0d0,#8a6090)",
     emoji: "🪆",
     imgClass: "",
-    imgs: ["imgs/104004dg320jaur6ilc791fi1b0.webp", "imgs/16b1814b96c8.webp", "imgs/8cb3f324062b.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jaur6ilc791fi1b0", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31rl21ktbi40g5o72ofag8o7stbs9oh0?imageView2/2/w/800/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031rl21saf26005o72ofag8o7s3uhu5fo?imageView2/2/w/800/q/80/format/webp"],
     story: "Dream Island (奇梦岛) creates soft vinyl collectible figures in the WAKUKU 'Start Your Luck' series — inspired by traditional Chinese auspicious motifs reimagined in contemporary designer toy aesthetics. The 3-box set includes random character variants, plus a lucky dice charm.",
     detailImages: [
-              { url: "imgs/e3e6ebb0df9b.webp", caption: "Product detail" },
-              { url: "imgs/16b1814b96c8.webp", caption: "Lifestyle shot" },
-              { url: "imgs/8cb3f324062b.webp", caption: "Craft detail" },
-              { url: "imgs/2d8369392593.webp", caption: "Blind box detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31rl21cm928005o72ofag8o7s6mv2pl8?imageView2/2/w/800/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31rl21ktbi40g5o72ofag8o7stbs9oh0?imageView2/2/w/800/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031rl21saf26005o72ofag8o7s3uhu5fo?imageView2/2/w/800/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031rl222ihi8005o72ofag8o7suq2hkj0?imageView2/2/w/800/q/80/format/webp", caption: "Blind box detail" },
             ],
     detailText: "Brand: WAKUKU (哇库库) by 奇梦岛\nSeries: Start Your Luck (立刻开挂吧)\nSet: 3 box set + lucky dice charm accessory\nMaterial: Soft vinyl (搪胶)\nBlind box: Yes — random character per box\nCollection: Multiple series\nShips from: Dongguan, Guangdong",
     hotReview: "Got the rare variant in the first box. Felt genuinely lucky. Then bought more.",
@@ -3846,19 +3851,19 @@ const products = [
     originalPrice: "$184",
     sold: "1,280+ sold",
     shop: "The Remarkable Artisan · 了不起的匠人",
-    shopAvatar: "imgs/704378f7cb0b.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo310457ccslu005o5fk66gbgd06doplr0?imageView2/2/w/120/format/jpg",
     shopEmoji: "🌸",
     likes: "9.4k",
     grad: "linear-gradient(135deg,#f5e8e0,#d4c0b8)",
     emoji: "🌸",
     imgClass: "",
-    imgs: ["imgs/104004dg320javvgr6o07d7efo0.webp", "imgs/a2bd3670fe1e.webp", "imgs/a03e964f1c69.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320javvgr6o07d7efo0", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31pj59ntvju0g5o5fk66gbgd0f25kg18?imageView2/2/w/750/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031p17l7lqia005o5fk66gbgd0i796va0?imageView2/2/w/750/q/80/format/webp"],
     story: "The Remarkable Artisan (了不起的匠人) creates non-heritage porcelain flower incense sets — miniature ceramic flowers handcrafted in Fujian, paired with bamboo-node tea sachets in a gift box. No flame, no smoke — just the gentle scent of flowers and bamboo tea.",
     detailImages: [
-              { url: "imgs/fb69b703f644.webp", caption: "Product detail" },
-              { url: "imgs/a2bd3670fe1e.webp", caption: "Lifestyle shot" },
-              { url: "imgs/a03e964f1c69.webp", caption: "Gift box detail" },
-              { url: "imgs/6b0cf04aba91.webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31va2uba440105o5fk66gbgd0011oi9g?imageView2/2/w/1946/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31pj59ntvju0g5o5fk66gbgd0f25kg18?imageView2/2/w/750/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031p17l7lqia005o5fk66gbgd0i796va0?imageView2/2/w/750/q/80/format/webp", caption: "Gift box detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031pj5b7e9js005o5fk66gbgd01cu9kgo?imageView2/2/w/750/q/80/format/webp", caption: "Craft detail" },
             ],
     detailText: "Contents: Porcelain flower incense + bamboo-node tea\nPackaging: Premium gift box + rope handle bag\nMethod: No flame — passive fragrance diffusion\nFragrance: Floral + bamboo/green tea\nOccasion: Birthday, housewarming, wedding, 520\nShips from: Xiamen, Fujian · Free shipping",
     hotReview: "I've given this as a gift three times. It is always the most admired thing on the table.",
@@ -3893,19 +3898,19 @@ const products = [
     originalPrice: "$86",
     sold: "4,100+ sold",
     shop: "Bai Xi · 白隙",
-    shopAvatar: "imgs/1cea1fcfba3a.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ub49rtuia005oilhdo8da811tt48io?imageView2/2/w/120/format/jpg",
     shopEmoji: "🌼",
     likes: "6.2k",
     grad: "linear-gradient(135deg,#4A7C59,#2a4a38)",
     emoji: "🌼",
     imgClass: "",
-    imgs: ["imgs/104004dg320jb0n3tlk0cc6ui1s.webp", "imgs/5c3676451779.webp", "imgs/c273f8cbaa6c.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jb0n3tlk0cc6ui1s", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031lc3vlnp50005oilhdo8da817519am0?imageView2/2/w/4521/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31lc3voqgku0g5oilhdo8da81ntbbveg?imageView2/2/w/4422/q/80/format/webp"],
     story: "Bai Xi (白隙) collaborates with indie artists to create wearable craft pieces. This lucky money flower (永远有钱花, 'May You Always Have Money Flower') combines traditional Chinese crochet techniques with modern brooch hardware. The green flower white heart edition became viral for its abundance symbolism.",
     detailImages: [
-              { url: "imgs/24c159900ae5.webp", caption: "Product detail" },
-              { url: "imgs/5c3676451779.webp", caption: "Lifestyle shot" },
-              { url: "imgs/c273f8cbaa6c.webp", caption: "Craft detail" },
-              { url: "imgs/67c6f2cb7259.webp", caption: "Brooch wearable" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0ao31ljg446k5m005oilhdo8da81a3910t8?imageView2/2/w/800/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031lc3vlnp50005oilhdo8da817519am0?imageView2/2/w/4521/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31lc3voqgku0g5oilhdo8da81ntbbveg?imageView2/2/w/4422/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031lc3r16m4q005oilhdo8da81u0rupv0?imageView2/2/w/4672/q/80/format/webp", caption: "Brooch wearable" },
             ],
     detailText: "Collaboration: Bai Xi × Rosydoedian\nStyle: Lucky money flower (永远有钱花)\nVariant: Green flower white heart\nTechnique: Hand-crochet\nWear: Brooch, bag charm, hair ornament\nShips from: Chengdu, Sichuan · Free shipping",
     hotReview: "I pinned this to my bag and within a week three people asked where to get one. Also I got a bonus at work.",
@@ -3940,19 +3945,19 @@ const products = [
     originalPrice: "$715",
     sold: "520+ sold",
     shop: "KAILAS · 凯乐石",
-    shopAvatar: "imgs/54c164ed334e.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/66de4cead0a6d335db2847d5.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🏔",
     likes: "22k",
     grad: "linear-gradient(135deg,#1B3A6B,#2a5080)",
     emoji: "🏔",
     imgClass: "tall",
-    imgs: ["imgs/104004dg320jb12h96o04ui3hrs.webp", "imgs/d13d7ef23d33.webp", "imgs/c8fbc4af599e.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jb12h96o04ui3hrs", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031jck44m2ii005pk8ph8juna3ldv8ab8?imageView2/2/w/1200/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31jck44mq2a0g5pk8ph8juna30a50at0?imageView2/2/w/1200/q/80/format/webp"],
     story: "KAILAS (凯乐石) is China's leading technical outdoor brand — trusted by Himalayan expeditions and everyday hikers alike. The MONT X hard shell jacket uses GORE-TEX technology for extreme weather protection with the breathability needed for sustained aerobic activity.",
     detailImages: [
-              { url: "imgs/276c10a797cc.webp", caption: "Product detail" },
-              { url: "imgs/d13d7ef23d33.webp", caption: "Lifestyle shot" },
-              { url: "imgs/c8fbc4af599e.webp", caption: "Technical detail" },
-              { url: "imgs/fe62960c9436.webp", caption: "Color detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031jck44ldj6005pk8ph8juna3h8mkgk0?imageView2/2/w/1200/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031jck44m2ii005pk8ph8juna3ldv8ab8?imageView2/2/w/1200/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31jck44mq2a0g5pk8ph8juna30a50at0?imageView2/2/w/1200/q/80/format/webp", caption: "Technical detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31jck45272i0g5pk8ph8juna3uh3lhvg?imageView2/2/w/1200/q/80/format/webp", caption: "Color detail" },
             ],
     detailText: "Brand: KAILAS · 凯乐石\nSeries: MONT X All-Condition\nShell: GTX (GORE-TEX)\nFeatures: Storm protection, waterproof, breathable\nColor: Deep Teal Blue (深潭青)\nGender: Unisex (XS–XL)\nShips from: Guangzhou · Free shipping",
     hotReview: "I wore this through a sudden mountain snowstorm last month. Completely dry inside. Worth every yuan.",
@@ -3987,19 +3992,19 @@ const products = [
     originalPrice: "$111",
     sold: "9,300+ sold",
     shop: "aaad",
-    shopAvatar: "imgs/9d818ef9b9c2.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/621305ca2e257500016c9333.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🧢",
     likes: "38k",
     grad: "linear-gradient(135deg,#2a2a2a,#4a4a4a)",
     emoji: "🧢",
     imgClass: "",
-    imgs: ["imgs/104004dg320jb2h8k5i0em5snuo.webp", "imgs/537c722e0120.webp", "imgs/109429a70487.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jb2h8k5i0em5snuo", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031trkq8m90c0g5n3chfnkkts6l220eng?imageView2/2/w/1440/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31trkq8mr6q0g5n3chfnkkts6g3ectl8?imageView2/2/w/1440/q/80/format/webp"],
     story: "aaad (an action a day) has become one of the most trusted accessories brands in Chinese outdoor/lifestyle culture. Their nylon bucket hat combines serious water-repellent performance with clean minimal design — no logos, no branding. Just function and form.",
     detailImages: [
-              { url: "imgs/f28c9c1e9f49.webp", caption: "Product detail" },
-              { url: "imgs/537c722e0120.webp", caption: "Lifestyle shot" },
-              { url: "imgs/109429a70487.webp", caption: "Craft detail" },
-              { url: "imgs/a0cb31fb6bb8.webp", caption: "Color detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31trkq8lmmq0g5n3chfnkkts64rq7ok8?imageView2/2/w/1440/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031trkq8m90c0g5n3chfnkkts6l220eng?imageView2/2/w/1440/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31trkq8mr6q0g5n3chfnkkts6g3ectl8?imageView2/2/w/1440/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31trkq8rimq0g5n3chfnkkts61i87j7g?imageView2/2/w/1440/q/80/format/webp", caption: "Color detail" },
             ],
     detailText: "Brand: aaad (an action a day)\nMaterial: Nylon, water-repellent finish\nStyle: Flat-brim bucket hat / basin hat\nSize: One size (unisex)\nSeason: All-season\nColor: Black\nShips from: Hangzhou, Zhejiang · Free shipping",
     hotReview: "I have owned five bucket hats. This is the only one I wear every single day without thinking about it.",
@@ -4034,19 +4039,19 @@ const products = [
     originalPrice: "$134",
     sold: "1,640+ sold",
     shop: "HERBALOGY · 素芳斋",
-    shopAvatar: "imgs/46557e8618cf.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ktoj3quk86g5n9umqkliijnpt47lno?imageView2/2/w/120/format/jpg",
     shopEmoji: "🌿",
     likes: "2.1k",
     grad: "linear-gradient(135deg,#d4a850,#a87820)",
     emoji: "🌿",
     imgClass: "",
-    imgs: ["imgs/104004dg320jb2rahmo0ajjvn5o.webp", "imgs/fe9067ef3d61.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jb2rahmo0ajjvn5o", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31mjk3gvjkq7g5n9umqkliijn3hv6ba8?imageView2/2/w/750/q/80/format/webp"],
     story: "Sufangzhai (素芳斋) is a traditional Chinese herbal beauty brand that formulates with 80%+ plant-derived ingredients. Their Orange Leaf Shampoo uses amino acid surfactants, natural orange leaf essential oil, and zero silicone — suitable for sensitive scalps and color-treated hair.",
     detailImages: [
-              { url: "imgs/4a1b6cb46aa8.webp", caption: "Product detail" },
-              { url: "imgs/fe9067ef3d61.webp", caption: "Lifestyle shot" },
-              { url: "imgs/f6ed592caa87.webp", caption: "Craft detail" },
-              { url: "imgs/a6c761ef3704.webp", caption: "Ingredient detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031i8r9hb2mo005n9umqkliijn8ma80q0?imageView2/2/w/3000/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31mjk3gvjkq7g5n9umqkliijn3hv6ba8?imageView2/2/w/750/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031mjk3h0jl2005n9umqkliijncagmido?imageView2/2/w/750/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31mjk3h1jkueg5n9umqkliijnq6mgb8o?imageView2/2/w/750/q/80/format/webp", caption: "Ingredient detail" },
             ],
     detailText: "Brand: 素芳斋 HERBALOGY\nFormula: 80% plant-based, amino acid surfactant\nKey ingredients: Orange leaf essential oil, no silicone\nSuitable for: All scalp types\nFunction: Gentle cleanse, oil control, itch relief\nRegistration: 粤G妆网备字2025139921\nShips from: Shenzhen, Guangdong · Free shipping",
     hotReview: "I've tried 12 shampoos for my sensitive scalp. This is the only one that doesn't cause flareups.",
@@ -4081,19 +4086,19 @@ const products = [
     originalPrice: "$107",
     sold: "2,380+ sold",
     shop: "ASPIR · 雀亦",
-    shopAvatar: "imgs/073611919d08.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/6806ffd67e3b3300010b89c6.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🧼",
     likes: "5.1k",
     grad: "linear-gradient(135deg,#1B3A6B,#4a6b9b)",
     emoji: "🧼",
     imgClass: "",
-    imgs: ["imgs/104004dg320jb38qo5k046k4iec.webp", "imgs/c19a25b429d9.webp", "imgs/daad730a43eb.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jb38qo5k046k4iec", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031o61g8b8kq005p5dgsviqhod39s06s8?imageView2/2/w/2420/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31o61frpb520g5p5dgsviqhod9s918cg?imageView2/2/w/3912/q/80/format/webp"],
     story: "ASPIR (雀亦) is a Guizhou-based herbal beauty brand working with traditional Miao herbal knowledge. Their Isatis Root (板蓝根) soap is formulated with cold-process technique and natural blue indigo from the same plant family used in traditional Chinese medicine for anti-inflammatory skincare.",
     detailImages: [
-              { url: "imgs/6b1acc82e158.webp", caption: "Product detail" },
-              { url: "imgs/c19a25b429d9.webp", caption: "Lifestyle shot" },
-              { url: "imgs/daad730a43eb.webp", caption: "Craft detail" },
-              { url: "imgs/399cd2b12890.webp", caption: "Ingredient detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31prv5hmqk00g5p5dgsviqhod72i4keg?imageView2/2/w/1772/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031o61g8b8kq005p5dgsviqhod39s06s8?imageView2/2/w/2420/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31o61frpb520g5p5dgsviqhod9s918cg?imageView2/2/w/3912/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031nhl8l5ekq0g5p5dgsviqhodava7un0?imageView2/2/w/4660/q/80/format/webp", caption: "Ingredient detail" },
             ],
     detailText: "Brand: ASPIR · 雀亦\nKey ingredient: Isatis root (板蓝根) blue indigo clay\nMethod: Cold process soap\nBenefit: Anti-inflammatory, soothing, acne-prone, insect-repellent\nSuitable for: Sensitive, acne-prone, summer skin\nShips from: Guiyang, Guizhou",
     hotReview: "I have acne-prone skin. This soap cleared my back acne in 3 weeks. I now buy in bulk.",
@@ -4128,19 +4133,19 @@ const products = [
     originalPrice: "$134",
     sold: "1,537+ sold",
     shop: "DOCUMENTS · 闻献",
-    shopAvatar: "imgs/8c634e7449f1.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/61dbcdf096f78400017e6987.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "📿",
     likes: "9.6k",
     grad: "linear-gradient(135deg,#8B4513,#c8a882)",
     emoji: "📿",
     imgClass: "",
-    imgs: ["imgs/104004dg320jb40825c084kpq50.webp", "imgs/d16c3409fa61.webp", "imgs/956f45254018.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jb40825c084kpq50", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031on0njni520g5nv58k7g97sqbl7j4k8?imageView2/2/w/1440/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031on0nju5kq705nv58k7g97sq5vnb7po?imageView2/2/w/1440/q/80/format/webp"],
     story: "Wenwu DOCUMENTS (闻献) is one of the most revered independent perfume houses in China — known for their 'Q香' series that pairs miniature perfume vials with traditional Chinese knotwork rope charms. The Yuhua Xian scent (羽化仙, 'Feathered Immortal') is a woody oriental accord with Suzhou knot attachment.",
     detailImages: [
-              { url: "imgs/e31d58720e5f.webp", caption: "Product detail" },
-              { url: "imgs/d16c3409fa61.webp", caption: "Lifestyle shot" },
-              { url: "imgs/956f45254018.webp", caption: "Craft detail" },
-              { url: "imgs/02fdaacc4424.webp", caption: "Charm detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31on0njo8ku0g5nv58k7g97sque73g5o?imageView2/2/w/1440/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031on0njni520g5nv58k7g97sqbl7j4k8?imageView2/2/w/1440/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031on0nju5kq705nv58k7g97sq5vnb7po?imageView2/2/w/1440/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31on0nk44ku0g5nv58k7g97sq7c2trt0?imageView2/2/w/1440/q/80/format/webp", caption: "Charm detail" },
             ],
     detailText: "Brand: 闻献 DOCUMENTS\nCollection: Q-Xiang Rope Knot Charm Series\nScent: Yuhua Xian (羽化仙) — Feathered Immortal\nType: EDP (淡香精)\nVolume: 5ml\nCharm: Double Panyuan Knot (双攀缘结)\nRegistration: 沪G妆网备字2024013181\nShips from: Suzhou, Jiangsu · Free shipping",
     hotReview: "I wear the charm on my bag. Everyone asks if it's jewelry. Then I spray the scent and they ask for the link.",
@@ -4175,19 +4180,19 @@ const products = [
     originalPrice: "$141",
     sold: "5,073+ sold",
     shop: "Guanxia · 观夏",
-    shopAvatar: "imgs/65e131250ab2.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/61270dcd53b1eb00011b1e18.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🕯",
     likes: "31k",
     grad: "linear-gradient(135deg,#1B3A6B,#2a4a8a)",
     emoji: "🕯",
     imgClass: "",
-    imgs: ["imgs/104004dg320jb4dqa5k17sas9go.webp", "imgs/0a181f7b0284.webp", "imgs/ab888b17b244.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jb4dqa5k17sas9go", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31tp0mvbv6o0g41c8s3f1hkgnm44j9io?imageView2/2/w/1667/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031tp0mvcpmo0041c8s3f1hkgnoihc6eo?imageView2/2/w/1667/q/80/format/webp"],
     story: "Guanxia (观夏, 'Watching Summer') is the most prestigious Chinese artisanal candle brand — known for their all-natural botanical essential oil formulas inspired by classical Chinese landscapes. Kunlun Boiled Snow (昆仑煮雪) evokes a mythological mountain spring, fresh and icy and ancient.",
     detailImages: [
-              { url: "imgs/ea426c585464.webp", caption: "Product detail" },
-              { url: "imgs/0a181f7b0284.webp", caption: "Lifestyle shot" },
-              { url: "imgs/ab888b17b244.webp", caption: "Craft detail" },
-              { url: "imgs/8c9b865a3402.webp", caption: "Scent detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31tp0mvb1mo7g41c8s3f1hkgnodn62qo?imageView2/2/w/1667/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31tp0mvbv6o0g41c8s3f1hkgnm44j9io?imageView2/2/w/1667/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031tp0mvcpmo0041c8s3f1hkgnoihc6eo?imageView2/2/w/1667/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031tp0mvj5g80041c8s3f1hkgnups0cdg?imageView2/2/w/1667/q/80/format/webp", caption: "Scent detail" },
             ],
     detailText: "Brand: 观夏 Guanxia\nScent: Kunlun Boiled Snow (昆仑煮雪)\nType: Essential oil soy wax candle\nWick: Wood core wick\nWeight: 130g\nBurn time: ~30 hours\nFragrance: Fresh mountain · Ice · Botanical\nShips from: Jiaxing, Zhejiang · Free shipping",
     hotReview: "The second I light this, my apartment feels like a different place. It's the scent version of a mood board.",
@@ -4222,19 +4227,19 @@ const products = [
     originalPrice: "$121",
     sold: "4,700+ sold",
     shop: "Meirijiaoan · 每日乔安",
-    shopAvatar: "imgs/8453c7a87804.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/63b111a1bb177541319b03b0.jpg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🌹",
     likes: "42k",
     grad: "linear-gradient(135deg,#c4a0c0,#8a6088)",
     emoji: "🌹",
     imgClass: "",
-    imgs: ["imgs/104004dg320jb5ej35c0f55a608.webp", "imgs/23c8e3837671.webp", "imgs/0ca7d4f675e0.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jb5ej35c0f55a608", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031uf26ltc36005om54rr0vth32fm8cpg?imageView2/2/w/800/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031uf2e1e11u005om54rr0vth3uvelafo?imageView2/2/w/1140/q/80/format/webp"],
     story: "Meirijiaoan (每日乔安) creates functional health powders that combine TCM herb traditions with modern nutritional science. The Rose Seven-Berry blend combines rose, blueberry, cranberry, dendrobium, and Chinese wolfberry — supporting circulation, skin clarity, and natural vitality.",
     detailImages: [
-              { url: "imgs/b5ab155ac82a.webp", caption: "Product detail" },
-              { url: "imgs/c73fbbbf2b1d.webp", caption: "Lifestyle shot" },
-              { url: "imgs/0ca7d4f675e0.webp", caption: "Craft detail" },
-              { url: "imgs/68f8e7b2bf1c.webp", caption: "Ingredient detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31ug8vhsl340g5om54rr0vth3oh5nvh8?imageView2/2/w/1280/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031ug8vm1tj4005om54rr0vth3ivihhf0?imageView2/2/w/1280/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031uf2e1e11u005om54rr0vth3uvelafo?imageView2/2/w/1140/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31uf2e1df360g5om54rr0vth3ufgl1b8?imageView2/2/w/1050/q/80/format/webp", caption: "Ingredient detail" },
             ],
     detailText: "Formula: Rose (玫瑰) · Seven berries · Blue dendrobium · Maqui berry · Cranberry\nType: Health powder · No added sugar\nSet: 3 bags (economy pack)\nRegistration: SC115232722 (food safety certified)\nShips from: Hangzhou, Zhejiang · Free shipping",
     hotReview: "I've been drinking this every morning for 6 months. My skin tone has genuinely changed.",
@@ -4269,19 +4274,19 @@ const products = [
     originalPrice: "$245",
     sold: "390+ sold",
     shop: "Gong · 贡龙井茶叶",
-    shopAvatar: "imgs/6ac4256ba970.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31p0ph3kp265g5pni1m77hq70795dgbg?imageView2/2/w/120/format/jpg",
     shopEmoji: "🍵",
     likes: "2.8k",
     grad: "linear-gradient(135deg,#4A7C59,#2a4a38)",
     emoji: "🍵",
     imgClass: "",
-    imgs: ["imgs/104004dg320jb68l35i05sl1jo4.webp", "imgs/9209f9ddc018.webp", "imgs/079dc94a20e6.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jb68l35i05sl1jo4", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031uirpnlc1m005pni1m77hq70um2kt9g?imageView2/2/w/1440/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g3no31uirpnlqj4005pni1m77hq7023fg1eo?imageView2/2/w/1440/q/80/format/webp"],
     story: "Gong (贡) sources authentic Mingqian (pre-Qingming festival) West Lake Longjing — the highest grade of China's most famous green tea. First flush 2026, picked before April 5th. Each leaf is hand-flat-roasted in a wok. The aroma is chestnut-sweet and lingering. 250g is enough for 3 months of daily drinking.",
     detailImages: [
-              { url: "imgs/f8752d3088f9.webp", caption: "Product detail" },
-              { url: "imgs/9209f9ddc018.webp", caption: "Lifestyle shot" },
-              { url: "imgs/079dc94a20e6.webp", caption: "Craft detail" },
-              { url: "imgs/f9524515e87e.webp", caption: "Tea leaves detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31uirp56tj4105pni1m77hq70c90cfj0?imageView2/2/w/1440/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031uirpnlc1m005pni1m77hq70um2kt9g?imageView2/2/w/1440/q/80/format/webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31uirpnlqj4005pni1m77hq7023fg1eo?imageView2/2/w/1440/q/80/format/webp", caption: "Craft detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31uirpnm73g0g5pni1m77hq701en2lvo?imageView2/2/w/1440/q/80/format/webp", caption: "Tea leaves detail" },
             ],
     detailText: "Type: Mingqian (明前) Longjing green tea\nGrade: Special grade (特级)\nHarvest: 2026 spring, first flush (before Qingming)\nOrigin: West Lake region, Hangzhou\nWeight: 250g\nRegistration: SC114330106 (food safety)\nShips from: Hangzhou, Zhejiang · Free shipping",
     hotReview: "I drink Longjing every year. This is the first time I've been unable to finish other teas after drinking this one.",
@@ -4316,19 +4321,19 @@ const products = [
     originalPrice: "$134",
     sold: "6,200+ sold",
     shop: "Heweiyang · 合为养",
-    shopAvatar: "imgs/54c142b69332.webp",
+    shopAvatar: "https://sns-avatar-qc.xhscdn.com/avatar/bc7b1572-98cf-33fb-9358-8350fb8ada9b?imageView2/2/w/120/format/jpg",
     shopEmoji: "🌾",
     likes: "58k",
     grad: "linear-gradient(135deg,#8B6347,#c4a882)",
     emoji: "🌾",
     imgClass: "",
-    imgs: ["imgs/104004dg320jb9lktle0ek7al8g.webp", "imgs/e5d24e326106.webp", "imgs/9d3985481423.webp"],
+    imgs: ["https://xhs-doc.xhscdn.com/104004dg320jb9lktle0ek7al8g", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031u74i7cshm005o8v0980amn53tha9go?imageView2/2/w/800/q/80/format/webp", "https://mall-i1.xhscdn.com/arkgoods/1040g0o031ljnptn7ku005o8v0980amn5vh21hao?imageView2/2/w/800/q/80/format/webp"],
     story: "Heweiyang (合为养) has mastered the ancient nine-steam nine-dry (九蒸九晒) process for Huangjing (黄精, Polygonatum sibiricum) — one of the five immortal herbs of Chinese Taoism. Each batch of roots from Jiuhua Mountain (安徽九华山) is steamed and sun-dried nine times over 81 days. The result is a sweet, tonifying snack that the Chinese wellness generation eats like candy.",
     detailImages: [
-              { url: "imgs/9de21fda2b7b.webp", caption: "Product detail" },
-              { url: "imgs/e5d24e326106.webp", caption: "Herb snack closeup" },
-              { url: "imgs/9d3985481423.webp", caption: "Packaging detail" },
-              { url: "imgs/8b7902943b60.webp", caption: "Lifestyle shot" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31u74j1im1s0g5o8v0980amn5ujr3mn8?imageView2/2/w/1440/q/80/format/webp", caption: "Product detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031u74i7cshm005o8v0980amn53tha9go?imageView2/2/w/800/q/80/format/webp", caption: "Herb snack closeup" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g0o031ljnptn7ku005o8v0980amn5vh21hao?imageView2/2/w/800/q/80/format/webp", caption: "Packaging detail" },
+              { url: "https://mall-i1.xhscdn.com/arkgoods/1040g3no31ljnpto0l00g5o8v0980amn5d0ge9s8?imageView2/2/w/800/q/80/format/webp", caption: "Lifestyle shot" },
             ],
     detailText: "Herb: Huangjing (黄精) Polygonatum sibiricum\nProcess: Nine-steam nine-dry (九蒸九晒) · 81 days\nOrigin: Jiuhua Mountain, Anhui (10–15 year roots)\nWeight: 100g tasting pack\nStorage: 9 months shelf life · seal after opening\nRegistration: SC103417230 (food safety)\nShips from: Changsha, Hunan · Free shipping",
     hotReview: "I've been eating these instead of candy every evening. My digestion is noticeably better.",
@@ -4356,8 +4361,9 @@ const products = [
 ];
 
 // ===== RENDER PRODUCT CARD =====
-function renderCard(p, eager) {
-  if (p.hidden) return '';
+function renderCard(p) {
+  if (p.hidden) return ''; // skip hidden products
+  // Support both {cls,text} objects and plain strings
   const tagsHTML = (p.tags || []).map(t => {
     if (typeof t === 'string') {
       const clsMap = { 'Handmade': 'pill-artisan', 'Heritage': 'pill-heritage', 'Story': 'pill-story', 'Artisan': 'pill-artisan', 'Limited': 'pill-limited', 'Organic': 'pill-organic', 'Viral': 'pill-hot', 'Designer': 'pill-limited', 'New In': 'pill-new', 'Classic': 'pill-heritage' };
@@ -4365,13 +4371,11 @@ function renderCard(p, eager) {
     }
     return `<span class="pill ${t.cls}">${t.text}</span>`;
   }).join('');
-  const soldOutOverlay = p.soldOut ? `<div class="sold-out-overlay"><div class="sold-out-label">Sold Out</div></div>` : '';
-  const imgObjFit = ['Clothing','Bags & Shoes','Accessories'].includes(p.category) ? 'cover;object-position:center top' : 'cover';
-  const imgStyle = `width:100%;height:100%;object-fit:${imgObjFit};position:absolute;top:0;left:0;`;
+  const soldOutOverlay = p.soldOut
+    ? `<div class="sold-out-overlay"><div class="sold-out-label">Sold Out</div></div>`
+    : '';
   const imgContent = p.imgs && p.imgs.length
-    ? (eager
-        ? `<img src="${p.imgs[0]}" style="${imgStyle}" fetchpriority="high" decoding="async" alt="${p.shortName || p.name}" onerror="this.style.display='none'">`
-        : `<img src="${p.imgs[0]}" style="${imgStyle}" loading="lazy" decoding="async" alt="${p.shortName || p.name}" onerror="this.style.display='none'">`)
+    ? `<img src="${p.imgs[0]}" style="width:100%;height:100%;object-fit:${['Clothing','Bags & Shoes','Accessories'].includes(p.category) ? 'cover;object-position:center top' : 'cover'};position:absolute;top:0;left:0;" loading="lazy" alt="${p.shortName || p.name}" onerror="this.style.display='none'">`
     : p.emoji;
   return `
     <div class="product-card" data-category="${p.category || ''}" onclick="openProduct(${p.id})">
@@ -4398,16 +4402,10 @@ function renderCard(p, eager) {
 }
 
 // ===== POPULATE WATERFALLS =====
-// Tab渲染状态：只在首次切换时渲染，避免重复DOM操作
-const _tabRendered = {};
-
-function populateWaterfall(containerId, items, eagerCount) {
+function populateWaterfall(containerId, items) {
   const container = document.getElementById(containerId);
   if (!container) return;
-  if (_tabRendered[containerId]) return; // 已渲染过，跳过
-  _tabRendered[containerId] = true;
-  const n = eagerCount !== undefined ? eagerCount : 0;
-  container.innerHTML = items.map((p, i) => renderCard(p, i < n)).join('');
+  container.innerHTML = items.map(p => renderCard(p)).join('');
 }
 
 // ID-based lookup (safe regardless of array position)
@@ -4438,15 +4436,29 @@ const forYouIds = [
   44, 43, 41, 45,
   42, 46, 47, 48
 ];
-// 页面加载时只渲染ForYou（首屏8张eager，其余原生lazy）
-populateWaterfall('waterfallForyou', forYouIds.map(getById).filter(Boolean), 8);
+populateWaterfall('waterfallForyou', forYouIds.map(getById).filter(Boolean));
 
-// 其他Tab的数据定义（按需渲染，切换时才填充DOM）
+// Trending: viral + cultural moment items
 const trendingIds = [1, 2, 29, 16, 36, 37, 30, 40, 27, 44, 31, 9, 10, 24, 43, 38, 47, 45];
+populateWaterfall('waterfallTrending', trendingIds.map(getById).filter(Boolean));
+
+// Tab waterfalls — curated order for high-income US shoppers
+
+// Home & Living: Decor大件先 → 茶具/厨房小件 → 床品 → 香薰冲动消费
 const homeIds = [9, 10, 11, 12, 13, 3, 4, 6, 7, 8, 5, 14, 15];
+populateWaterfall('waterfallHome', homeIds.map(getById).filter(Boolean));
+
+// Fashion: 文化背书 → 高价精品 → 潮流单品 → 包/鞋/配件收尾
 const fashionIds = [1, 2, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29];
+populateWaterfall('waterfallFashion', fashionIds.map(getById).filter(Boolean));
+
+// Collectibles: IP/viral → 手工限量 → 实用艺术品 → 文房小众
 const collectiblesIds = [36, 37, 30, 31, 38, 39, 32, 33, 34, 35];
+populateWaterfall('waterfallCollectibles', collectiblesIds.map(getById).filter(Boolean));
+
+// Wellness: 户外冒险（强背书）→ 仪式感香薰/茶 → 草本健康（功能向最后）
 const wellnessIds = [40, 41, 44, 45, 42, 43, 46, 47, 48];
+populateWaterfall('waterfallWellness', wellnessIds.map(getById).filter(Boolean));
 
 // ===== TAB SWITCHING =====
 const catTabs = document.querySelectorAll('.cat-tab');
@@ -4459,23 +4471,12 @@ catTabs.forEach(tab => {
     tab.classList.add('active');
     const target = tab.dataset.tab;
     tabContents.forEach(tc => tc.classList.remove('active'));
-    const activeTab = document.getElementById('tab-' + target);
-    activeTab.classList.add('active');
+    document.getElementById('tab-' + target).classList.add('active');
     const kg = document.getElementById('kinggang');
     kg.style.display = (target === 'foryou') ? 'grid' : 'none';
     mainContent.scrollTop = 0;
+    // Clear any active category filter when switching tabs
     clearCategoryFilter();
-    // 按需渲染：首次切换才填充内容，首8张eager
-    const tabWaterfallMap = {
-      'foryou': null, // already rendered on load
-      'trending': { id: 'waterfallTrending', items: trendingIds },
-      'homeliving': { id: 'waterfallHome', items: homeIds },
-      'fashion': { id: 'waterfallFashion', items: fashionIds },
-      'collectibles': { id: 'waterfallCollectibles', items: collectiblesIds },
-      'wellness': { id: 'waterfallWellness', items: wellnessIds }
-    };
-    const wConf = tabWaterfallMap[target];
-    if (wConf) populateWaterfall(wConf.id, wConf.items.map(getById).filter(Boolean), 8);
   });
 });
 
@@ -4553,6 +4554,10 @@ function openProduct(id) {
   const p = products.find(p => p.id === id);
   if (!p) return;
   currentProductId = id;
+
+  // 记住当前滚动位置和tab
+  window._savedScrollTop = document.getElementById('mainContent').scrollTop;
+  window._savedTab = document.querySelector('.cat-tab.active')?.dataset?.tab || 'foryou';
 
   const page = document.getElementById('productPage');
 
@@ -4837,17 +4842,18 @@ function openProduct(id) {
     }
     // Detail image (bottom, after specs and process)
     if (p.detailImg) {
-      detailHTML += `<div style="margin-top:16px;"><img src="${p.detailImg}" loading="lazy" decoding="async" style="max-height:220px; width:100%; object-fit:cover; border-radius:12px; display:block;"></div>`;
+      detailHTML += `<div style="margin-top:16px;"><img src="${p.detailImg}" style="max-height:220px; width:100%; object-fit:cover; border-radius:12px; display:block;"></div>`;
     }
     // detailImages: rich image-caption blocks
     if (p.detailImages && p.detailImages.length) {
       detailHTML += `<div style="font-size:13px;font-weight:600;margin:20px 0 10px;color:#1a1a1a;border-top:1px solid #f0ede8;padding-top:16px;">Styling Gallery</div>`;
       p.detailImages.forEach(img => {
+        const isPortrait = !img.fullWidth;
         const imgStyle = img.fullWidth
           ? 'width:100%; border-radius:12px; display:block;'
-          : 'width:100%; object-fit:contain; background:#f9f6f2; border-radius:12px; display:block; max-height:360px;';
+          : 'width:100%; object-fit:contain; background:#f9f6f2; border-radius:12px; display:block; max-height:400px;';
         detailHTML += `<div style="margin-top:16px;">
-          <img src="${img.url}" loading="lazy" decoding="async" style="${imgStyle}">
+          <img src="${img.url}" style="${imgStyle}">
           ${img.caption ? `<div style="font-size:11px; color:#888; margin-top:6px; text-align:center;">${img.caption}</div>` : ''}
         </div>`;
       });
@@ -4910,6 +4916,13 @@ function closeProduct() {
   const page = document.getElementById('productPage');
   page.classList.remove('open');
   currentProductId = null;
+  // 恢复滚动位置
+  if (window._savedScrollTop !== undefined) {
+    requestAnimationFrame(() => {
+      const mc = document.getElementById('mainContent');
+      if (mc) mc.scrollTop = window._savedScrollTop;
+    });
+  }
 }
 
 function selectThumb(el, grad) {
@@ -4986,8 +4999,5 @@ if (qr) {
   });
 }
 </script>
-
-
-
 </body>
 </html>
